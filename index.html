@@ -28,8 +28,30 @@
 .statusStrip{position:absolute;left:9px;top:9px;display:flex;gap:5px;align-items:center;pointer-events:none}.statusPill{height:23px;display:flex;align-items:center;padding:0 7px;border:1px solid var(--line);border-radius:5px;background:rgba(255,255,255,.93);color:#69737f;font-size:10px}.toast{position:absolute;right:12px;bottom:12px;background:#252b32;color:#fff;border-radius:6px;padding:7px 10px;font-size:10px;opacity:0;transform:translateY(5px);transition:.18s;pointer-events:none}.toast.show{opacity:1;transform:translateY(0)}
 .atomHit{fill:transparent;cursor:pointer}.atomSel{display:none;fill:none;stroke:var(--accent);stroke-width:1.6;vector-effect:non-scaling-stroke}.atom.selected .atomSel{display:block}.atomLabel{font-size:17px;font-weight:650;text-anchor:middle;dominant-baseline:middle;paint-order:stroke;stroke:#fbfcfd;stroke-width:5px;pointer-events:none}.atomExtra,.atomCharge{font-size:10px;font-weight:650;pointer-events:none;paint-order:stroke;stroke:#fbfcfd;stroke-width:3px}.atom-C,.atom-H,.atom-B,.atom-Si{fill:#242a30}.atom-N{fill:#315bc7}.atom-O{fill:#cc4141}.atom-S{fill:#b48100}.atom-P{fill:#c56a26}.atom-hal{fill:#2f8959}.valenceWarn{fill:var(--warn);font-size:11px;font-weight:800;text-anchor:middle;pointer-events:none}
 .bondHit{fill:none;stroke:transparent;stroke-width:15;cursor:pointer}.bondLine{stroke:var(--bond);stroke-width:2;stroke-linecap:round;vector-effect:non-scaling-stroke;pointer-events:none}.bond.selected .bondLine{stroke:var(--accent)}.selectionBox{fill:rgba(53,103,220,.07);stroke:var(--accent);stroke-width:1.2;stroke-dasharray:5 4;vector-effect:non-scaling-stroke}.preview{fill:none;stroke:var(--accent);stroke-width:1.8;stroke-dasharray:5 4;vector-effect:non-scaling-stroke;pointer-events:none}
-.reactionArrow,.electronArrow,.textLabel{cursor:pointer}.objSelected{filter:url(#selectedGlow)}.reactionLine{stroke:#2b3138;stroke-width:1.8;fill:none;vector-effect:non-scaling-stroke}.reactionText{font-size:10px;text-anchor:middle;fill:#4b5560;paint-order:stroke;stroke:#fbfcfd;stroke-width:4px}.plusText,.labelText{font-size:23px;text-anchor:middle;dominant-baseline:middle;fill:#30363d;paint-order:stroke;stroke:#fbfcfd;stroke-width:4px}.labelText{font-size:12px}.eArrow{stroke:#365fbd;stroke-width:1.8;fill:none;vector-effect:non-scaling-stroke}.eAnchor{fill:#fff;stroke:#365fbd;stroke-width:1.2}
-dialog{border:1px solid var(--line2);border-radius:9px;background:#fff;padding:0;box-shadow:0 20px 70px rgba(20,27,38,.2);color:var(--text)}dialog::backdrop{background:rgba(40,45,55,.22)}.dialogHead{height:36px;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 9px;font-weight:650}.periodic{width:480px;max-width:calc(100vw - 40px)}.periodicBody{padding:9px;display:grid;grid-template-columns:repeat(8,1fr);gap:5px}.elementChoice{height:36px;border:1px solid var(--line);border-radius:6px;background:#fff;font-weight:650}.elementChoice:hover{background:var(--accentSoft);border-color:#9fb2e7}.dialogClose{margin-left:auto;border:0;background:transparent;font-size:18px;color:#68727e}
+.reactionArrow,.electronArrow,.textLabel{cursor:pointer}.objSelected{filter:url(#selectedGlow)}.reactionLine{stroke:#2b3138;stroke-width:1.8;fill:none;vector-effect:non-scaling-stroke}.reactionText{font-size:10px;text-anchor:middle;fill:#4b5560;paint-order:stroke;stroke:#fbfcfd;stroke-width:4px}.plusText,.labelText{font-size:23px;text-anchor:middle;dominant-baseline:middle;fill:#30363d;paint-order:stroke;stroke:#fbfcfd;stroke-width:4px}.labelText{font-size:12px}
+.bondStereoLabel{font-size:11px;font-weight:750;fill:#b43e49;text-anchor:middle;dominant-baseline:middle;paint-order:stroke;stroke:#fbfcfd;stroke-width:4px;pointer-events:none}
+
+.stereoText{font-size:11px;font-weight:700;fill:#bb3f47;text-anchor:middle;dominant-baseline:middle;paint-order:stroke;stroke:#fbfcfd;stroke-width:4px}
+.polymerBracket{cursor:pointer}
+.polymerBracket .bracketLine{fill:none;stroke:#343b43;stroke-width:1.7;vector-effect:non-scaling-stroke}
+.polymerBracket .bracketHit{fill:transparent;stroke:transparent;stroke-width:16}
+.polymerBracket .repeatIndex{font-size:17px;fill:#2d333a;font-weight:550}
+.polymerBracket.objSelected .bracketLine{stroke:var(--accent)}
+.groupHint{font-size:9px;color:#79838f;line-height:1.35;margin-top:5px}.eArrow{stroke:#365fbd;stroke-width:1.8;fill:none;vector-effect:non-scaling-stroke}.eAnchor{fill:#fff;stroke:#365fbd;stroke-width:1.2}
+dialog{border:1px solid var(--line2);border-radius:9px;background:#fff;padding:0;box-shadow:0 20px 70px rgba(20,27,38,.2);color:var(--text)}dialog::backdrop{background:rgba(40,45,55,.22)}.dialogHead{height:36px;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 9px;font-weight:650}.customAtomDialog{width:390px;max-width:calc(100vw - 36px)}
+.customAtomBody{padding:14px}
+.customAtomField{display:grid;grid-template-columns:92px minmax(0,1fr);gap:9px;align-items:center}
+.customAtomField label{font-size:10px;color:#68737f}
+.customAtomField input{height:30px;border:1px solid var(--line);border-radius:6px;padding:0 8px;outline:none}
+.customAtomField input:focus{border-color:#8ca7ea;box-shadow:0 0 0 2px rgba(53,103,220,.08)}
+.customAtomPreview{margin-top:12px;border:1px solid var(--line);border-radius:7px;background:#fafbfc;min-height:58px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:650;color:#29313a}
+.customAtomHelp{margin-top:8px;color:#74808c;font-size:10px;line-height:1.45}
+.customAtomActions{display:flex;gap:6px;justify-content:flex-end;margin-top:14px}
+.customAtomActions button{height:29px;border:1px solid var(--line);border-radius:6px;background:#fff;padding:0 11px;font-size:10px}
+.customAtomActions button:hover{background:#f4f6f8}
+.customAtomActions .primary{background:var(--accent);border-color:#2f5cc3;color:#fff;font-weight:650}
+.customAtomActions .primary:hover{background:#2e5cc5}
+.periodic{width:480px;max-width:calc(100vw - 40px)}.periodicBody{padding:9px;display:grid;grid-template-columns:repeat(8,1fr);gap:5px}.elementChoice{height:36px;border:1px solid var(--line);border-radius:6px;background:#fff;font-weight:650}.elementChoice:hover{background:var(--accentSoft);border-color:#9fb2e7}.dialogClose{margin-left:auto;border:0;background:transparent;font-size:18px;color:#68727e}
 </style>
 </head>
 <body>
@@ -42,8 +64,8 @@ dialog{border:1px solid var(--line2);border-radius:9px;background:#fff;padding:0
     <button class="modeBtn" data-mode="mechanism">Механизм</button>
   </div>
   <div class="sep"></div>
-  <button class="iconBtn" id="undoBtn" title="Undo — Ctrl/Cmd+Z">↶</button>
-  <button class="iconBtn" id="redoBtn" title="Redo — Ctrl/Cmd+Shift+Z">↷</button>
+  <button class="iconBtn" id="undoBtn" title="Отменить — Ctrl/Cmd+Z">↶</button>
+  <button class="iconBtn" id="redoBtn" title="Повторить — Ctrl/Cmd+Shift+Z">↷</button>
   <button class="topBtn" id="multiInsertBtn" title="Оставлять выбранный инструмент активным после вставки">Мультивставка</button>
   <button class="topBtn" id="clearBtn" title="Очистить схему">Очистить</button>
   <button class="topBtn insertBtn" id="insertBtn">Вставить в документ</button>
@@ -58,7 +80,7 @@ dialog{border:1px solid var(--line2);border-radius:9px;background:#fff;padding:0
   <marker id="electronHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#365fbd"/></marker>
 </defs>
 <rect x="-10000" y="-10000" width="20000" height="20000" fill="#fbfcfd"/><rect x="-10000" y="-10000" width="20000" height="20000" fill="url(#minorGrid)"/>
-<g id="bondLayer"></g><g id="atomLayer"></g><g id="reactionLayer"></g><g id="mechanismLayer"></g><g id="labelLayer"></g>
+<g id="bondLayer"></g><g id="atomLayer"></g><g id="reactionLayer"></g><g id="mechanismLayer"></g><g id="polymerLayer"></g><g id="labelLayer"></g>
 <path id="previewPath" class="preview" visibility="hidden"/><rect id="marquee" class="selectionBox" visibility="hidden"/>
 </svg>
 <div class="statusStrip"><div class="statusPill" id="modePill">Структура</div><div class="statusPill" id="toolPill">Выбор</div></div>
@@ -94,20 +116,36 @@ dialog{border:1px solid var(--line2);border-radius:9px;background:#fff;padding:0
   </div>
 </div>
 </div>
+<dialog id="customAtomDialog" class="customAtomDialog">
+  <div class="dialogHead">Свой атом<button class="dialogClose" id="customAtomClose">×</button></div>
+  <div class="customAtomBody">
+    <div class="customAtomField">
+      <label for="customAtomInput">Обозначение</label>
+      <input id="customAtomInput" type="text" value="NH2" autocomplete="off" spellcheck="false" placeholder="NH2, SO3H, OMe, R…">
+    </div>
+    <div class="customAtomPreview" id="customAtomPreview">NH₂</div>
+    <div class="customAtomHelp" id="customAtomHelp">После нажатия «Вставить» щёлкните по холсту в нужном месте.</div>
+    <div class="customAtomActions">
+      <button id="customAtomCancel">Отмена</button>
+      <button class="primary" id="customAtomInsert">Вставить</button>
+    </div>
+  </div>
+</dialog>
+
 <dialog id="periodicDialog" class="periodic"><div class="dialogHead">Элементы<button class="dialogClose" id="periodicClose">×</button></div><div class="periodicBody" id="periodicBody"></div></dialog>
 <script>
 (()=>{'use strict';
 const NS='http://www.w3.org/2000/svg',BOND_LEN=62;
-const S={mode:'structure',tool:{kind:'select',value:'select'},atoms:[],bonds:[],rings:[],reactionArrows:[],electronArrows:[],labels:[],next:{atom:1,bond:1,ring:1,reaction:1,electron:1,label:1},selection:{atoms:new Set(),bonds:new Set(),reaction:new Set(),electron:new Set(),labels:new Set()},interaction:null,history:[],historyIndex:-1,view:{x:0,y:0,w:1400,h:900},space:false,generatedLatex:'',settings:{showCarbons:true},multiInsert:false};
-const D={app:document.getElementById('app'),tools:document.getElementById('tools'),canvas:document.getElementById('canvas'),atomLayer:document.getElementById('atomLayer'),bondLayer:document.getElementById('bondLayer'),reactionLayer:document.getElementById('reactionLayer'),mechanismLayer:document.getElementById('mechanismLayer'),labelLayer:document.getElementById('labelLayer'),preview:document.getElementById('previewPath'),marquee:document.getElementById('marquee'),props:document.getElementById('props'),propsTitle:document.getElementById('propsTitle'),exportDialog:document.getElementById('exportDialog'),exportCode:document.getElementById('exportCode'),modePill:document.getElementById('modePill'),toolPill:document.getElementById('toolPill'),undo:document.getElementById('undoBtn'),redo:document.getElementById('redoBtn'),toast:document.getElementById('toast'),periodic:document.getElementById('periodicDialog'),periodicBody:document.getElementById('periodicBody')};
+const S={mode:'structure',tool:{kind:'select',value:'select'},atoms:[],bonds:[],rings:[],reactionArrows:[],electronArrows:[],labels:[],polymerBrackets:[],next:{atom:1,bond:1,ring:1,reaction:1,electron:1,label:1,polymer:1},selection:{atoms:new Set(),bonds:new Set(),reaction:new Set(),electron:new Set(),labels:new Set(),polymer:new Set()},interaction:null,history:[],historyIndex:-1,view:{x:0,y:0,w:1400,h:900},space:false,generatedLatex:'',settings:{showCarbons:true},multiInsert:false};
+const D={app:document.getElementById('app'),tools:document.getElementById('tools'),canvas:document.getElementById('canvas'),atomLayer:document.getElementById('atomLayer'),bondLayer:document.getElementById('bondLayer'),reactionLayer:document.getElementById('reactionLayer'),mechanismLayer:document.getElementById('mechanismLayer'),polymerLayer:document.getElementById('polymerLayer'),labelLayer:document.getElementById('labelLayer'),preview:document.getElementById('previewPath'),marquee:document.getElementById('marquee'),props:document.getElementById('props'),propsTitle:document.getElementById('propsTitle'),exportDialog:document.getElementById('exportDialog'),exportCode:document.getElementById('exportCode'),modePill:document.getElementById('modePill'),toolPill:document.getElementById('toolPill'),undo:document.getElementById('undoBtn'),redo:document.getElementById('redoBtn'),toast:document.getElementById('toast'),periodic:document.getElementById('periodicDialog'),periodicBody:document.getElementById('periodicBody'),customAtomDialog:document.getElementById('customAtomDialog'),customAtomInput:document.getElementById('customAtomInput'),customAtomPreview:document.getElementById('customAtomPreview'),customAtomHelp:document.getElementById('customAtomHelp')};
 const ELEMENTS=['C','N','O','S','P','F','Cl','Br','I'],MORE=['H','B','Si','Se','Na','K','Li','Mg','Ca','Al','Fe','Cu','Zn','Ag','Au','Hg'];
 const svg=(tag,a={})=>{const n=document.createElementNS(NS,tag);for(const[k,v]of Object.entries(a))n.setAttribute(k,String(v));return n};
-const A=id=>S.atoms.find(x=>x.id===id),B=id=>S.bonds.find(x=>x.id===id),R=id=>S.reactionArrows.find(x=>x.id===id),E=id=>S.electronArrows.find(x=>x.id===id),L=id=>S.labels.find(x=>x.id===id);
+const A=id=>S.atoms.find(x=>x.id===id),B=id=>S.bonds.find(x=>x.id===id),R=id=>S.reactionArrows.find(x=>x.id===id),E=id=>S.electronArrows.find(x=>x.id===id),L=id=>S.labels.find(x=>x.id===id),PBR=id=>S.polymerBrackets.find(x=>x.id===id);
 const world=(cx,cy)=>{const p=D.canvas.createSVGPoint();p.x=cx;p.y=cy;return p.matrixTransform(D.canvas.getScreenCTM().inverse())},dist=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y),ang=(a,b)=>Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI,rad=d=>d*Math.PI/180,norm=d=>{d%=360;if(d<0)d+=360;return d},pointFrom=(a,d,l=BOND_LEN)=>({x:a.x+Math.cos(rad(d))*l,y:a.y+Math.sin(rad(d))*l}),clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 function snapAngle(d,s=30){return Math.round(d/s)*s}
-function deepState(){return JSON.stringify({atoms:S.atoms,bonds:S.bonds,rings:S.rings,reactionArrows:S.reactionArrows,electronArrows:S.electronArrows,labels:S.labels,next:S.next})}
+function deepState(){return JSON.stringify({atoms:S.atoms,bonds:S.bonds,rings:S.rings,reactionArrows:S.reactionArrows,electronArrows:S.electronArrows,labels:S.labels,polymerBrackets:S.polymerBrackets,next:S.next})}
 function pushHistory(){const s=deepState();S.history=S.history.slice(0,S.historyIndex+1);if(S.history.at(-1)===s)return;S.history.push(s);if(S.history.length>120)S.history.shift();S.historyIndex=S.history.length-1;updateUndoRedo()}
-function restoreHistory(i){if(i<0||i>=S.history.length)return;const d=JSON.parse(S.history[i]);S.atoms=d.atoms;S.bonds=d.bonds;S.rings=d.rings;S.reactionArrows=d.reactionArrows;S.electronArrows=d.electronArrows;S.labels=d.labels;S.next=d.next;S.historyIndex=i;clearSelection();renderAll();updateUndoRedo()}
+function restoreHistory(i){if(i<0||i>=S.history.length)return;const d=JSON.parse(S.history[i]);S.atoms=d.atoms;S.bonds=d.bonds;S.rings=d.rings;S.reactionArrows=d.reactionArrows;S.electronArrows=d.electronArrows;S.labels=d.labels;S.polymerBrackets=d.polymerBrackets||[];S.next=d.next;if(S.next.polymer==null)S.next.polymer=1;S.historyIndex=i;clearSelection();renderAll();updateUndoRedo()}
 function updateUndoRedo(){D.undo.disabled=S.historyIndex<=0;D.redo.disabled=S.historyIndex>=S.history.length-1}
 function toast(msg){D.toast.textContent=msg;D.toast.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>D.toast.classList.remove('show'),1400)}
 function clearSelection(){Object.values(S.selection).forEach(s=>s.clear())}
@@ -118,91 +156,319 @@ document.querySelectorAll('.modeBtn').forEach(b=>b.onclick=()=>setMode(b.dataset
 function toolButton(kind,value,caption,content,title=''){return `<button class="tool${S.tool.kind===kind&&String(S.tool.value)===String(value)?' active':''}" data-kind="${kind}" data-value="${value}" title="${title||caption}">${content||`<span class="symbol">${value}</span>`}<span class="caption">${caption}</span></button>`}
 function bondIcon(t){const p={single:'M3 10H29',double:'M3 7H29M3 13H29',triple:'M3 5H29M3 10H29M3 15H29'};if(p[t])return `<svg viewBox="0 0 32 20"><path d="${p[t]}" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>`;if(t==='aromatic')return `<svg viewBox="0 0 32 20"><path d="M3 7H29M3 13H29" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 3"/></svg>`;if(t==='wedge')return `<svg viewBox="0 0 32 20"><path d="M3 10L29 3V17Z" fill="currentColor"/></svg>`;if(t==='dash')return `<svg viewBox="0 0 32 20"><path d="M4 10L28 4M10 11L28 7M16 12L28 10M22 13L28 13" stroke="currentColor" stroke-width="1.2"/></svg>`;return `<svg viewBox="0 0 32 20"><path d="M3 10C10 2 22 18 29 10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>`}
 function ringIcon(n,bz=false){const pts=[];for(let i=0;i<n;i++){const a=-90+i*360/n;pts.push([16+Math.cos(rad(a))*11,10+Math.sin(rad(a))*8])}return `<svg viewBox="0 0 32 20"><polygon points="${pts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="currentColor" stroke-width="1.5"/>${bz?'<circle cx="16" cy="10" r="4.5" fill="none" stroke="currentColor" stroke-width="1.1"/>':''}</svg>`}
-function renderTools(){let h='';if(S.mode==='structure'){h+=`<div class="toolSection"><div class="toolTitle">Выбор</div><div class="toolGrid">${toolButton('select','select','Выбор','<span class="symbol">↖</span>')}</div></div>`;h+=`<div class="toolSection"><div class="toolTitle">Атомы</div><div class="toolGrid">${ELEMENTS.map(e=>toolButton('atom',e,e)).join('')}${toolButton('more','more','Ещё','<span class="symbol">⋯</span>')}</div></div>`;h+=`<div class="toolSection"><div class="toolTitle">Связи</div><div class="toolGrid cols3">${toolButton('bond','single','Одинарная',bondIcon('single'))}${toolButton('bond','double','Двойная',bondIcon('double'))}${toolButton('bond','triple','Тройная',bondIcon('triple'))}${toolButton('bond','aromatic','Ароматич.',bondIcon('aromatic'))}${toolButton('bond','wedge','Wedge',bondIcon('wedge'))}${toolButton('bond','dash','Dashed',bondIcon('dash'))}${toolButton('bond','wavy','Волнистая',bondIcon('wavy'))}</div></div>`;h+=`<div class="toolSection"><div class="toolTitle">Кольца</div><div class="toolGrid">${toolButton('ring','3','3',ringIcon(3))}${toolButton('ring','4','4',ringIcon(4))}${toolButton('ring','5','5',ringIcon(5))}${toolButton('ring','6','6',ringIcon(6))}${toolButton('ring','benzene','Бензол',ringIcon(6,true))}</div></div>`;h+=`<div class="toolSection"><div class="toolTitle">Фрагменты</div><select class="compactSelect" id="fragmentSelect"><option value="">Выбрать фрагмент…</option><option>Me</option><option>Et</option><option>Ph</option><option>OH</option><option>NH2</option><option>COOH</option><option>NO2</option><option>CF3</option><option>Boc</option></select></div>`}
+function renderTools(){let h='';if(S.mode==='structure'){h+=`<div class="toolSection"><div class="toolTitle">Выбор</div><div class="toolGrid">${toolButton('select','select','Выбор','<span class="symbol">↖</span>')}</div></div>`;h+=`<div class="toolSection"><div class="toolTitle">Атомы</div><div class="toolGrid">${ELEMENTS.map(e=>toolButton('atom',e,e)).join('')}${toolButton('customAtom','custom','Свой атом','<span class="symbol">Ab</span>','Создать атом или группу с произвольным обозначением: NH2, SO3H, OMe, R…')}${toolButton('more','more','Ещё','<span class="symbol">⋯</span>')}</div></div>`;h+=`<div class="toolSection"><div class="toolTitle">Связи</div><div class="toolGrid cols3">${toolButton('bond','single','Одинарная',bondIcon('single'))}${toolButton('bond','double','Двойная',bondIcon('double'))}${toolButton('bond','triple','Тройная',bondIcon('triple'))}${toolButton('bond','aromatic','Ароматич.',bondIcon('aromatic'))}${toolButton('bond','wedge','Клин',bondIcon('wedge'))}${toolButton('bond','dash','Штрих-клин',bondIcon('dash'))}${toolButton('bond','wavy','Волнистая',bondIcon('wavy'))}</div></div>`;h+=`<div class="toolSection"><div class="toolTitle">Кольца</div><div class="toolGrid">${toolButton('ring','3','3',ringIcon(3))}${toolButton('ring','4','4',ringIcon(4))}${toolButton('ring','5','5',ringIcon(5))}${toolButton('ring','6','6',ringIcon(6))}${toolButton('ring','benzene','Бензол',ringIcon(6,true))}</div></div>`;h+=`<div class="toolSection"><div class="toolTitle">Фрагменты</div><select class="compactSelect" id="fragmentSelect"><option value="">Выбрать фрагмент…</option><option>Me</option><option>Et</option><option>Ph</option><option>OH</option><option>NH2</option><option>COOH</option><option>NO2</option><option>CF3</option><option>Boc</option></select><div class="groupHint">OH и NH₂ вставляются как явные химические группы, а не как одиночные O/N.</div></div>`;
+h+=`<div class="toolSection"><div class="toolTitle">Полимеры</div><div class="toolGrid">${toolButton('polymer','repeat','[ ]ₙ','<span class="symbol">[ ]ₙ</span>','Скобки повторяющегося звена. Сначала выделите фрагмент или обведите его.')}</div></div>`}
 else if(S.mode==='reaction'){h+=`<div class="toolSection"><div class="toolTitle">Выбор</div><div class="toolGrid">${toolButton('select','select','Выбор','<span class="symbol">↖</span>')}</div></div><div class="toolSection"><div class="toolTitle">Реакция</div><div class="toolGrid cols3">${toolButton('reaction','forward','Стрелка','<span class="symbol">→</span>')}${toolButton('reaction','reversible','Обратимая','<svg viewBox="0 0 34 20"><path d="M3 6H27M27 6l-6-4m6 4l-6 4M31 14H7M7 14l6-4m-6 4l6 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>','Две полноценные стрелки')}${toolButton('reaction','equilibrium','Равновесие','<svg viewBox="0 0 34 20"><path d="M3 6H28M28 6l-7-4M31 14H6M6 14l7 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>','Равновесные полустрелки')}${toolButton('reaction','plus','Плюс','<span class="symbol">+</span>')}${toolButton('reaction','text','Текст','<span class="symbol">T</span>')}</div></div><div class="infoBox emptyInfo">Структуры остаются на общем холсте. Добавляйте между ними стрелки, плюс и подписи.</div>`}
-else{h+=`<div class="toolSection"><div class="toolTitle">Выбор</div><div class="toolGrid">${toolButton('select','select','Выбор','<span class="symbol">↖</span>')}</div></div><div class="toolSection"><div class="toolTitle">Перенос электронов</div><div class="toolGrid cols3">${toolButton('electron','pair','Curved','<span class="symbol">↷</span>')}${toolButton('electron','single','Fishhook','<span class="symbol">↝</span>')}${toolButton('mechanism','lonePair','Lone pair','<span class="symbol">:</span>')}${toolButton('mechanism','charge','Заряд','<span class="symbol">±</span>')}${toolButton('mechanism','radical','Радикал','<span class="symbol">•</span>')}</div></div><div class="infoBox emptyInfo">Стрелки привязываются к атому или связи и сохраняют привязку при перемещении структуры.</div>`}
-D.tools.innerHTML=h;D.tools.querySelectorAll('.tool').forEach(b=>b.onclick=()=>{const k=b.dataset.kind,v=b.dataset.value;if(k==='more'){D.periodic.showModal();return}setTool(k,v,true)});const fs=document.getElementById('fragmentSelect');if(fs)fs.onchange=()=>{if(fs.value)setTool('fragment',fs.value,true)}}
-function setTool(kind,value,rerender=true){S.tool={kind,value};D.toolPill.textContent={select:'Выбор',atom:`Атом ${value}`,bond:'Связь',ring:'Кольцо',fragment:`Фрагмент ${value}`,reaction:'Реакция',electron:value==='pair'?'Curved arrow':'Fishhook',mechanism:'Механизм'}[kind]||value;if(rerender)renderTools()}
+else{h+=`<div class="toolSection"><div class="toolTitle">Выбор</div><div class="toolGrid">${toolButton('select','select','Выбор','<span class="symbol">↖</span>')}</div></div><div class="toolSection"><div class="toolTitle">Перенос электронов</div><div class="toolGrid cols3">${toolButton('electron','pair','Пара e⁻','<span class="symbol">↷</span>')}${toolButton('electron','single','Один e⁻','<span class="symbol">↝</span>')}${toolButton('mechanism','lonePair','Непод. пара','<span class="symbol">:</span>')}${toolButton('mechanism','charge','Заряд','<span class="symbol">±</span>')}${toolButton('mechanism','radical','Радикал','<span class="symbol">•</span>')}</div></div><div class="infoBox emptyInfo">Стрелки привязываются к атому или связи и сохраняют привязку при перемещении структуры.</div>`}
+D.tools.innerHTML=h;D.tools.querySelectorAll('.tool').forEach(b=>b.onclick=()=>{const k=b.dataset.kind,v=b.dataset.value;if(k==='more'){D.periodic.showModal();return}
+if(k==='customAtom'){
+  openCustomAtomDialog();
+  return
+}
+if(k==='polymer'&&S.selection.atoms.size){addPolymerBracket([...S.selection.atoms]);pushHistory();renderAll();finishInsertion();return}
+setTool(k,v,true)});const fs=document.getElementById('fragmentSelect');if(fs)fs.onchange=()=>{if(fs.value)setTool('fragment',fs.value,true)}}
+function setTool(kind,value,rerender=true){S.tool={kind,value};D.toolPill.textContent={select:'Выбор',atom:`Атом ${value}`,bond:'Связь',ring:'Кольцо',fragment:`Фрагмент ${value}`,reaction:'Реакция',electron:value==='pair'?'Перенос пары e⁻':'Перенос одного e⁻',mechanism:'Механизм'}[kind]||value;if(rerender)renderTools()}
 function finishInsertion(){if(!S.multiInsert)setTool('select','select',true)}
-function addAtom(element,x,y,props={}){const a={type:'Atom',id:S.next.atom++,element,x,y,charge:0,isotope:'',hydrogens:0,hMode:'Auto',radical:'none',lonePairs:0,...props};S.atoms.push(a);return a}
-function addBond(a,b,bondType='single',props={}){if(a===b)return null;let ex=S.bonds.find(x=>(x.a===a&&x.b===b)||(x.a===b&&x.b===a));if(ex){ex.bondType=bondType;ex.order=bondType==='double'?2:bondType==='triple'?3:bondType==='aromatic'?1.5:1;return ex}const bond={type:'Bond',id:S.next.bond++,a,b,bondType,stereo:'none',order:bondType==='double'?2:bondType==='triple'?3:bondType==='aromatic'?1.5:1,...props};S.bonds.push(bond);return bond}
+function formatCustomAtomPreview(value){
+  const clean=String(value||'').trim();
+  return clean?prettyCustomLabel(clean):'—';
+}
+function openCustomAtomDialog(){
+  const one=selectedObject();
+  const selectedAtom=one?.kind==='atom'?one.obj:null;
+  D.customAtomInput.value=selectedAtom?.customLabel||'NH2';
+  D.customAtomPreview.textContent=formatCustomAtomPreview(D.customAtomInput.value);
+  D.customAtomHelp.textContent=selectedAtom
+    ? 'Нажмите «Вставить», чтобы заменить обозначение выбранного атома.'
+    : 'Нажмите «Вставить», затем щёлкните по холсту в нужном месте.';
+  D.customAtomDialog.showModal();
+  setTimeout(()=>{D.customAtomInput.focus();D.customAtomInput.select()},30);
+}
+function confirmCustomAtom(){
+  const value=D.customAtomInput.value.trim();
+  if(!value){D.customAtomInput.focus();return}
+  const one=selectedObject();
+  if(one?.kind==='atom'){
+    one.obj.customLabel=value;
+    pushHistory();
+    D.customAtomDialog.close();
+    setTool('select','select',true);
+    renderAll();
+    return
+  }
+  D.customAtomDialog.close();
+  setTool('customAtom',value,true);
+  toast(`Выбран свой атом: ${prettyCustomLabel(value)}`);
+}
+
+function addAtom(element,x,y,props={}){const a={type:'Atom',id:S.next.atom++,element,x,y,customLabel:'',charge:0,isotope:'',hydrogens:0,hMode:'Auto',radical:'none',lonePairs:0,...props};S.atoms.push(a);return a}
+function addBond(a,b,bondType='single',props={}){if(a===b)return null;let ex=S.bonds.find(x=>(x.a===a&&x.b===b)||(x.a===b&&x.b===a));if(ex){ex.bondType=bondType;ex.order=bondType==='double'?2:bondType==='triple'?3:bondType==='aromatic'?1.5:1;return ex}const bond={type:'Bond',id:S.next.bond++,a,b,bondType,stereo:'none',stereoLabel:'none',order:bondType==='double'?2:bondType==='triple'?3:bondType==='aromatic'?1.5:1,...props};S.bonds.push(bond);return bond}
 function addRing(atomIds,bondIds,kind){const r={type:'Ring',id:S.next.ring++,atomIds,bondIds,kind};S.rings.push(r);return r}
 function addReactionArrow(x,y,kind='forward'){const r={type:'ReactionArrow',id:S.next.reaction++,x,y,kind,top:'',bottom:'',length:130};S.reactionArrows.push(r);return r}
 function addLabel(x,y,text='+',kind='text'){const l={type:'TextLabel',id:S.next.label++,x,y,text,kind};S.labels.push(l);return l}
+function boundsForAtoms(ids,padding=22){
+  const atoms=ids.map(A).filter(Boolean);
+  if(!atoms.length)return null;
+  return{
+    x1:Math.min(...atoms.map(a=>a.x))-padding,
+    y1:Math.min(...atoms.map(a=>a.y))-padding,
+    x2:Math.max(...atoms.map(a=>a.x))+padding,
+    y2:Math.max(...atoms.map(a=>a.y))+padding
+  };
+}
+function addPolymerBracket(atomIds,index='n'){
+  const ids=[...new Set(atomIds)].filter(id=>A(id));
+  const b=boundsForAtoms(ids);
+  if(!b)return null;
+  const obj={type:'PolymerBracket',id:S.next.polymer++,atomIds:ids,index,delimiters:'[]',padding:22,...b};
+  S.polymerBrackets.push(obj);
+  clearSelection();S.selection.polymer.add(obj.id);
+  return obj;
+}
+
 function addElectronArrow(start,end,kind='pair'){const e={type:'ElectronArrow',id:S.next.electron++,kind,start,end,direction:'forward'};S.electronArrows.push(e);return e}
 function endpoint(ep){if(ep?.target?.kind==='atom'){const a=A(ep.target.id);if(a)return{x:a.x,y:a.y}}if(ep?.target?.kind==='bond'){const b=B(ep.target.id),a=A(b?.a),c=A(b?.b);if(a&&c)return{x:(a.x+c.x)/2,y:(a.y+c.y)/2}}return ep?.point||{x:0,y:0}}
-function selectedObject(){if(selectionCount()!==1)return null;if(S.selection.atoms.size)return{kind:'atom',obj:A([...S.selection.atoms][0])};if(S.selection.bonds.size)return{kind:'bond',obj:B([...S.selection.bonds][0])};if(S.selection.reaction.size)return{kind:'reaction',obj:R([...S.selection.reaction][0])};if(S.selection.electron.size)return{kind:'electron',obj:E([...S.selection.electron][0])};if(S.selection.labels.size)return{kind:'label',obj:L([...S.selection.labels][0])};return null}
+function selectedObject(){if(selectionCount()!==1)return null;if(S.selection.atoms.size)return{kind:'atom',obj:A([...S.selection.atoms][0])};if(S.selection.bonds.size)return{kind:'bond',obj:B([...S.selection.bonds][0])};if(S.selection.reaction.size)return{kind:'reaction',obj:R([...S.selection.reaction][0])};if(S.selection.electron.size)return{kind:'electron',obj:E([...S.selection.electron][0])};if(S.selection.labels.size)return{kind:'label',obj:L([...S.selection.labels][0])};if(S.selection.polymer.size)return{kind:'polymer',obj:PBR([...S.selection.polymer][0])};return null}
 function atomClass(e){if(e==='N')return'atom-N';if(e==='O')return'atom-O';if(e==='S')return'atom-S';if(e==='P')return'atom-P';if(['F','Cl','Br','I'].includes(e))return'atom-hal';return'atom-C'}
 function bondSum(id){return S.bonds.filter(b=>b.a===id||b.b===id).reduce((n,b)=>n+(b.order||1),0)}function valenceLimit(e){return({C:4,N:3,O:2,S:6,P:5,F:1,Cl:1,Br:1,I:1,H:1,B:3,Si:4})[e]||8}
-function atomNeedsLabel(a){if(a.element!=='C')return true;if(S.settings.showCarbons)return true;return !!(a.charge||a.isotope||a.hMode==='Show'||a.radical!=='none'||a.lonePairs||S.bonds.filter(b=>b.a===a.id||b.b===a.id).length===0)}
+function atomNeedsLabel(a){if(a.customLabel)return true;if(a.element!=='C')return true;if(S.settings.showCarbons)return true;return !!(a.charge||a.isotope||a.hMode==='Show'||a.radical!=='none'||a.lonePairs||S.bonds.filter(b=>b.a===a.id||b.b===a.id).length===0)}
 function shorten(a,b,da,db){const dx=b.x-a.x,dy=b.y-a.y,l=Math.hypot(dx,dy)||1,ux=dx/l,uy=dy/l;return[{x:a.x+ux*da,y:a.y+uy*da},{x:b.x-ux*db,y:b.y-uy*db}]}
 function offset(a,b,o){const dx=b.x-a.x,dy=b.y-a.y,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l;return[{x:a.x+nx*o,y:a.y+ny*o},{x:b.x+nx*o,y:b.y+ny*o}]}
 function line(g,a,b,cls='bondLine',extra={}){const n=svg('line',{class:cls,x1:a.x,y1:a.y,x2:b.x,y2:b.y,...extra});g.appendChild(n);return n}
-function renderAll(){renderBonds();renderAtoms();renderReactions();renderMechanism();renderLabels();renderProps();updateLatex();updateUndoRedo()}
-function renderBonds(){D.bondLayer.replaceChildren();for(const b of S.bonds){const a=A(b.a),c=A(b.b);if(!a||!c)continue;const g=svg('g',{class:'bond'+(S.selection.bonds.has(b.id)?' selected':''),'data-id':b.id});const[p1,p2]=shorten(a,c,atomNeedsLabel(a)?13:2,atomNeedsLabel(c)?13:2);line(g,p1,p2,'bondHit');if(b.bondType==='single')line(g,p1,p2);else if(b.bondType==='double'){const[x1,y1]=offset(p1,p2,-3.6),[x2,y2]=offset(p1,p2,3.6);line(g,x1,y1);line(g,x2,y2)}else if(b.bondType==='triple'){line(g,p1,p2);const[x1,y1]=offset(p1,p2,-5),[x2,y2]=offset(p1,p2,5);line(g,x1,y1);line(g,x2,y2)}else if(b.bondType==='aromatic'){line(g,p1,p2);const[x,y]=offset(p1,p2,4.5);line(g,x,y,'bondLine',{'stroke-dasharray':'6 4'})}else if(b.bondType==='wedge'){const dx=p2.x-p1.x,dy=p2.y-p1.y,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l;g.appendChild(svg('polygon',{points:`${p1.x},${p1.y} ${p2.x+nx*6},${p2.y+ny*6} ${p2.x-nx*6},${p2.y-ny*6}`,fill:S.selection.bonds.has(b.id)?'#3567dc':'#252a30'}))}else if(b.bondType==='dash'){const dx=p2.x-p1.x,dy=p2.y-p1.y,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l;for(let i=1;i<=6;i++){const t=i/7,w=1+i*.7,cx=p1.x+dx*t,cy=p1.y+dy*t;line(g,{x:cx-nx*w,y:cy-ny*w},{x:cx+nx*w,y:cy+ny*w})}}else{g.appendChild(svg('path',{class:'bondLine',d:`M${p1.x} ${p1.y} C${p1.x+(p2.x-p1.x)*.3} ${p1.y-8} ${p1.x+(p2.x-p1.x)*.7} ${p2.y+8} ${p2.x} ${p2.y}`}))}g.onpointerdown=objectDown;D.bondLayer.appendChild(g)}}
-function renderAtoms(){D.atomLayer.replaceChildren();for(const a of S.atoms){const g=svg('g',{class:'atom'+(S.selection.atoms.has(a.id)?' selected':''),'data-id':a.id});g.appendChild(svg('circle',{class:'atomSel',cx:a.x,cy:a.y,r:16}));g.appendChild(svg('circle',{class:'atomHit',cx:a.x,cy:a.y,r:17}));if(atomNeedsLabel(a)){const t=svg('text',{class:`atomLabel ${atomClass(a.element)}`,x:a.x,y:a.y});t.textContent=a.element;g.appendChild(t);if(a.isotope){const n=svg('text',{class:'atomExtra',x:a.x-13,y:a.y-9});n.textContent=a.isotope;g.appendChild(n)}if(a.hMode==='Show'&&a.hydrogens>0){const n=svg('text',{class:'atomExtra',x:a.x+11,y:a.y+3});n.textContent='H'+(a.hydrogens>1?a.hydrogens:'');g.appendChild(n)}if(a.charge){const n=svg('text',{class:'atomCharge',x:a.x+10,y:a.y-10});n.textContent=(Math.abs(a.charge)>1?Math.abs(a.charge):'')+(a.charge>0?'+':'−');g.appendChild(n)}if(a.radical!=='none'){const n=svg('text',{class:'atomExtra',x:a.x+10,y:a.y+12});n.textContent='•';g.appendChild(n)}if(a.lonePairs>0){const n=svg('text',{class:'atomExtra',x:a.x-13,y:a.y+12});n.textContent=':'.repeat(Math.min(2,a.lonePairs));g.appendChild(n)}}if(bondSum(a.id)>valenceLimit(a.element)+.01){const w=svg('text',{class:'valenceWarn',x:a.x,y:a.y-23});w.textContent='!';g.appendChild(w)}g.onpointerdown=objectDown;D.atomLayer.appendChild(g)}}
+function renderAll(){renderBonds();renderAtoms();renderReactions();renderMechanism();renderPolymerBrackets();renderLabels();renderProps();updateLatex();updateUndoRedo()}
+function renderBonds(){D.bondLayer.replaceChildren();for(const b of S.bonds){const a=A(b.a),c=A(b.b);if(!a||!c)continue;const g=svg('g',{class:'bond'+(S.selection.bonds.has(b.id)?' selected':''),'data-id':b.id});const[p1,p2]=shorten(a,c,atomNeedsLabel(a)?13:2,atomNeedsLabel(c)?13:2);line(g,p1,p2,'bondHit');if(b.bondType==='single')line(g,p1,p2);else if(b.bondType==='double'){const[x1,y1]=offset(p1,p2,-3.6),[x2,y2]=offset(p1,p2,3.6);line(g,x1,y1);line(g,x2,y2)}else if(b.bondType==='triple'){line(g,p1,p2);const[x1,y1]=offset(p1,p2,-5),[x2,y2]=offset(p1,p2,5);line(g,x1,y1);line(g,x2,y2)}else if(b.bondType==='aromatic'){line(g,p1,p2);const[x,y]=offset(p1,p2,4.5);line(g,x,y,'bondLine',{'stroke-dasharray':'6 4'})}else if(b.bondType==='wedge'){const dx=p2.x-p1.x,dy=p2.y-p1.y,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l;g.appendChild(svg('polygon',{points:`${p1.x},${p1.y} ${p2.x+nx*6},${p2.y+ny*6} ${p2.x-nx*6},${p2.y-ny*6}`,fill:S.selection.bonds.has(b.id)?'#3567dc':'#252a30'}))}else if(b.bondType==='dash'){const dx=p2.x-p1.x,dy=p2.y-p1.y,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l;for(let i=1;i<=6;i++){const t=i/7,w=1+i*.7,cx=p1.x+dx*t,cy=p1.y+dy*t;line(g,{x:cx-nx*w,y:cy-ny*w},{x:cx+nx*w,y:cy+ny*w})}}else{g.appendChild(svg('path',{class:'bondLine',d:`M${p1.x} ${p1.y} C${p1.x+(p2.x-p1.x)*.3} ${p1.y-8} ${p1.x+(p2.x-p1.x)*.7} ${p2.y+8} ${p2.x} ${p2.y}`}))}if(b.stereoLabel&&b.stereoLabel!=='none'){
+  const mx=(p1.x+p2.x)/2,my=(p1.y+p2.y)/2,dx=p2.x-p1.x,dy=p2.y-p1.y,ll=Math.hypot(dx,dy)||1,nx=-dy/ll,ny=dx/ll;
+  const st=svg('text',{class:'bondStereoLabel',x:mx+nx*11,y:my+ny*11});
+  st.textContent=b.stereoLabel==='alpha'?'α':'β';g.appendChild(st)
+}
+g.onpointerdown=objectDown;D.bondLayer.appendChild(g)}}
+const SUBDIG={'0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉'};
+function subNumber(n){return String(n).split('').map(c=>SUBDIG[c]||c).join('')}
+function prettyCustomLabel(s){return String(s||'').replace(/(\d+)/g,m=>subNumber(m))}
+function atomDisplayText(a){
+  if(a.customLabel)return prettyCustomLabel(a.customLabel);
+  if(a.hMode==='Show'&&a.hydrogens>0){
+    const h='H'+(a.hydrogens>1?subNumber(a.hydrogens):'');
+    return a.element+h;
+  }
+  return a.element;
+}
+function customLabelLatex(s){return String(s||'').replace(/(\d+)/g,'_$1')}
+function atomLatexText(a){
+  let t=a.customLabel?customLabelLatex(a.customLabel):a.element;
+  if(!a.customLabel&&a.hMode==='Show'&&a.hydrogens>0)t+=a.hydrogens>1?`H_${a.hydrogens}`:'H';
+  if(a.charge)t=`{${t}}^{${Math.abs(a.charge)>1?Math.abs(a.charge):''}${a.charge>0?'+':'-'}}`;
+  return t;
+}
+function renderAtoms(){D.atomLayer.replaceChildren();for(const a of S.atoms){const g=svg('g',{class:'atom'+(S.selection.atoms.has(a.id)?' selected':''),'data-id':a.id});g.appendChild(svg('circle',{class:'atomSel',cx:a.x,cy:a.y,r:16}));g.appendChild(svg('circle',{class:'atomHit',cx:a.x,cy:a.y,r:17}));if(atomNeedsLabel(a)){const t=svg('text',{class:`atomLabel ${atomClass(a.element)}`,x:a.x,y:a.y});t.textContent=atomDisplayText(a);g.appendChild(t);if(a.isotope){const n=svg('text',{class:'atomExtra',x:a.x-13,y:a.y-9});n.textContent=a.isotope;g.appendChild(n)}if(a.charge){const n=svg('text',{class:'atomCharge',x:a.x+10,y:a.y-10});n.textContent=(Math.abs(a.charge)>1?Math.abs(a.charge):'')+(a.charge>0?'+':'−');g.appendChild(n)}if(a.radical!=='none'){const n=svg('text',{class:'atomExtra',x:a.x+10,y:a.y+12});n.textContent='•';g.appendChild(n)}if(a.lonePairs>0){const n=svg('text',{class:'atomExtra',x:a.x-13,y:a.y+12});n.textContent=':'.repeat(Math.min(2,a.lonePairs));g.appendChild(n)}}if(bondSum(a.id)>valenceLimit(a.element)+.01){const w=svg('text',{class:'valenceWarn',x:a.x,y:a.y-23});w.textContent='!';g.appendChild(w)}g.onpointerdown=objectDown;D.atomLayer.appendChild(g)}}
 function renderReactions(){D.reactionLayer.replaceChildren();for(const r of S.reactionArrows){const g=svg('g',{class:'reactionArrow'+(S.selection.reaction.has(r.id)?' objSelected':''),'data-id':r.id}),x1=r.x-r.length/2,x2=r.x+r.length/2,y=r.y;g.appendChild(svg('rect',{x:x1-8,y:y-30,width:r.length+16,height:60,fill:'transparent'}));if(r.kind==='forward'){line(g,{x:x1,y},{x:x2,y},'reactionLine',{'marker-end':'url(#arrowHead)'})}else if(r.kind==='reversible'){line(g,{x:x1,y:y-5},{x:x2,y:y-5},'reactionLine',{'marker-end':'url(#arrowHead)'});line(g,{x:x2,y:y+5},{x:x1,y:y+5},'reactionLine',{'marker-end':'url(#arrowHead)'})}else{line(g,{x:x1,y:y-5},{x:x2,y:y-5},'reactionLine');g.appendChild(svg('path',{class:'reactionLine',d:`M${x2} ${y-5} L${x2-10} ${y-11}`}));line(g,{x:x2,y:y+5},{x:x1,y:y+5},'reactionLine');g.appendChild(svg('path',{class:'reactionLine',d:`M${x1} ${y+5} L${x1+10} ${y+11}`}))}if(r.top){const t=svg('text',{class:'reactionText',x:r.x,y:r.y-15});t.textContent=r.top;g.appendChild(t)}if(r.bottom){const t=svg('text',{class:'reactionText',x:r.x,y:r.y+19});t.textContent=r.bottom;g.appendChild(t)}g.onpointerdown=objectDown;D.reactionLayer.appendChild(g)}}
 function renderMechanism(){D.mechanismLayer.replaceChildren();for(const e of S.electronArrows){const a=endpoint(e.start),b=endpoint(e.end),mx=(a.x+b.x)/2,my=(a.y+b.y)/2-45,g=svg('g',{class:'electronArrow'+(S.selection.electron.has(e.id)?' objSelected':''),'data-id':e.id});g.appendChild(svg('path',{class:'eArrow',d:`M${a.x} ${a.y} Q${mx} ${my} ${b.x} ${b.y}`,'marker-end':'url(#electronHead)'}));if(e.kind==='single')g.appendChild(svg('circle',{cx:b.x-4,cy:b.y-2,r:1.6,fill:'#365fbd'}));g.appendChild(svg('circle',{class:'eAnchor',cx:a.x,cy:a.y,r:3}));g.appendChild(svg('circle',{class:'eAnchor',cx:b.x,cy:b.y,r:3}));g.onpointerdown=objectDown;D.mechanismLayer.appendChild(g)}}
-function renderLabels(){D.labelLayer.replaceChildren();for(const l of S.labels){const g=svg('g',{class:'textLabel'+(S.selection.labels.has(l.id)?' objSelected':''),'data-id':l.id,transform:`translate(${l.x} ${l.y})`});g.appendChild(svg('rect',{x:-24,y:-15,width:48,height:30,fill:'transparent'}));const t=svg('text',{class:l.kind==='plus'?'plusText':'labelText',x:0,y:0});t.textContent=l.text;g.appendChild(t);g.onpointerdown=objectDown;D.labelLayer.appendChild(g)}}
+function renderPolymerBrackets(){
+  D.polymerLayer.replaceChildren();
+  for(const br of S.polymerBrackets){
+    let b=br.atomIds?.length?boundsForAtoms(br.atomIds,br.padding||22):br;
+    if(!b)continue;
+    br.x1=b.x1;br.y1=b.y1;br.x2=b.x2;br.y2=b.y2;
+    const g=svg('g',{class:'polymerBracket'+(S.selection.polymer.has(br.id)?' objSelected':''),'data-id':br.id});
+    const h=Math.max(18,br.y2-br.y1),cap=Math.min(12,h*.16);
+    const left=`M${br.x1+cap} ${br.y1} H${br.x1} V${br.y2} H${br.x1+cap}`;
+    const right=`M${br.x2-cap} ${br.y1} H${br.x2} V${br.y2} H${br.x2-cap}`;
+    g.appendChild(svg('path',{class:'bracketHit',d:left}));
+    g.appendChild(svg('path',{class:'bracketHit',d:right}));
+    g.appendChild(svg('path',{class:'bracketLine',d:left}));
+    g.appendChild(svg('path',{class:'bracketLine',d:right}));
+    const idx=svg('text',{class:'repeatIndex',x:br.x2+8,y:br.y2+4});idx.textContent=br.index||'n';g.appendChild(idx);
+    g.onpointerdown=objectDown;
+    D.polymerLayer.appendChild(g);
+  }
+}
+function renderLabels(){D.labelLayer.replaceChildren();for(const l of S.labels){const g=svg('g',{class:'textLabel'+(S.selection.labels.has(l.id)?' objSelected':''),'data-id':l.id,transform:`translate(${l.x} ${l.y})`});g.appendChild(svg('rect',{x:-24,y:-15,width:48,height:30,fill:'transparent'}));const t=svg('text',{class:l.kind==='plus'?'plusText':l.kind==='stereo'?'stereoText':'labelText',x:0,y:0});t.textContent=l.text;g.appendChild(t);g.onpointerdown=objectDown;D.labelLayer.appendChild(g)}}
 function nearestAtom(p,max=20){let best=null,bd=max;for(const a of S.atoms){const d=dist(a,p);if(d<bd){bd=d;best=a}}return best}
 function connectedAngles(id){const a=A(id),out=[];for(const b of S.bonds){if(b.a===id){const c=A(b.b);if(c)out.push(norm(ang(a,c)))}else if(b.b===id){const c=A(b.a);if(c)out.push(norm(ang(a,c)))}}return out}
 function bestBondAngle(id,p=null){const a=A(id),arr=connectedAngles(id);if(p)return snapAngle(ang(a,p));if(!arr.length)return 0;if(arr.length===1)return norm(arr[0]+120);let best=0,score=-1;for(let d=0;d<360;d+=30){const s=Math.min(...arr.map(x=>Math.min(Math.abs(d-x),360-Math.abs(d-x))));if(s>score){score=s;best=d}}return best}
 function targetFromScreen(x,y){const e=document.elementFromPoint(x,y),a=e?.closest?.('.atom'),b=e?.closest?.('.bond');if(a)return{kind:'atom',id:Number(a.dataset.id)};if(b)return{kind:'bond',id:Number(b.dataset.id)};return null}
-function objectDown(ev){if(ev.button!==0)return;ev.stopPropagation();const g=ev.currentTarget,p=world(ev.clientX,ev.clientY),isAtom=g.classList.contains('atom'),isBond=g.classList.contains('bond'),isReaction=g.classList.contains('reactionArrow'),isElectron=g.classList.contains('electronArrow'),isLabel=g.classList.contains('textLabel');
-if(S.mode==='structure'&&S.tool.kind==='atom'&&isAtom){A(Number(g.dataset.id)).element=S.tool.value;pushHistory();renderAll();finishInsertion();return}
+function objectDown(ev){if(ev.button!==0)return;ev.stopPropagation();const g=ev.currentTarget,p=world(ev.clientX,ev.clientY),isAtom=g.classList.contains('atom'),isBond=g.classList.contains('bond'),isReaction=g.classList.contains('reactionArrow'),isElectron=g.classList.contains('electronArrow'),isLabel=g.classList.contains('textLabel'),isPolymer=g.classList.contains('polymerBracket');
+if(S.mode==='structure'&&S.tool.kind==='atom'&&isAtom){const a=A(Number(g.dataset.id));a.element=S.tool.value;a.customLabel='';pushHistory();renderAll();finishInsertion();return}
+if(S.mode==='structure'&&S.tool.kind==='customAtom'&&isAtom){const a=A(Number(g.dataset.id));a.customLabel=String(S.tool.value);pushHistory();renderAll();finishInsertion();return}
 if(S.mode==='structure'&&S.tool.kind==='bond'&&isAtom){const id=Number(g.dataset.id);S.interaction={type:'bondCreate',start:id,startPoint:p,moved:false,bondType:S.tool.value};D.preview.setAttribute('visibility','visible');g.setPointerCapture(ev.pointerId);return}
 if(S.mode==='structure'&&S.tool.kind==='ring'&&isAtom){attachRing(Number(g.dataset.id),S.tool.value);finishInsertion();return}
 if(S.mode==='structure'&&S.tool.kind==='fragment'&&isAtom){attachFragment(Number(g.dataset.id),S.tool.value);finishInsertion();return}
 if(S.mode==='mechanism'&&S.tool.kind==='mechanism'&&isAtom){const a=A(Number(g.dataset.id));if(S.tool.value==='lonePair')a.lonePairs=Math.min(4,(a.lonePairs||0)+1);if(S.tool.value==='charge')a.charge=(a.charge||0)+1;if(S.tool.value==='radical')a.radical=a.radical==='none'?'single':'none';pushHistory();renderAll();finishInsertion();return}
 if(S.mode==='mechanism'&&S.tool.kind==='electron'&&(isAtom||isBond)){const target=isAtom?{kind:'atom',id:Number(g.dataset.id)}:{kind:'bond',id:Number(g.dataset.id)};S.interaction={type:'electronCreate',start:{target,point:p},current:p,kind:S.tool.value};D.preview.setAttribute('visibility','visible');g.setPointerCapture(ev.pointerId);return}
-let key=null,id=null;if(isAtom){key='atoms';id=Number(g.dataset.id)}else if(isBond){key='bonds';id=Number(g.dataset.id)}else if(isReaction){key='reaction';id=Number(g.dataset.id)}else if(isElectron){key='electron';id=Number(g.dataset.id)}else if(isLabel){key='labels';id=Number(g.dataset.id)}if(!key)return;
+let key=null,id=null;if(isAtom){key='atoms';id=Number(g.dataset.id)}else if(isBond){key='bonds';id=Number(g.dataset.id)}else if(isReaction){key='reaction';id=Number(g.dataset.id)}else if(isElectron){key='electron';id=Number(g.dataset.id)}else if(isLabel){key='labels';id=Number(g.dataset.id)}else if(isPolymer){key='polymer';id=Number(g.dataset.id)}if(!key)return;
 if(ev.shiftKey){S.selection[key].has(id)?S.selection[key].delete(id):S.selection[key].add(id)}else if(!S.selection[key].has(id)||selectionCount()===1){clearSelection();S.selection[key].add(id)}renderAll();
 if(key==='atoms'){const ids=[...S.selection.atoms];S.interaction={type:'dragAtoms',start:p,orig:ids.map(i=>({id:i,x:A(i).x,y:A(i).y})),moved:false}}else if(key==='reaction'){const r=R(id);S.interaction={type:'dragReaction',id,start:p,x:r.x,y:r.y,moved:false}}else if(key==='labels'){const l=L(id);S.interaction={type:'dragLabel',id,start:p,x:l.x,y:l.y,moved:false}}g.setPointerCapture?.(ev.pointerId)}
-D.canvas.addEventListener('pointerdown',ev=>{if(ev.button!==0&&ev.button!==1)return;if(ev.target.closest?.('.atom,.bond,.reactionArrow,.electronArrow,.textLabel'))return;const p=world(ev.clientX,ev.clientY);if(ev.button===1||S.space){S.interaction={type:'pan',screen:{x:ev.clientX,y:ev.clientY},view:{...S.view}};D.canvas.setPointerCapture(ev.pointerId);ev.preventDefault();return}
-if(S.mode==='structure'){if(S.tool.kind==='atom'){const a=addAtom(S.tool.value,p.x,p.y);clearSelection();S.selection.atoms.add(a.id);pushHistory();renderAll();finishInsertion();return}if(S.tool.kind==='ring'){insertRing(p,S.tool.value);finishInsertion();return}if(S.tool.kind==='fragment'){insertFragmentAt(p,S.tool.value);finishInsertion();return}}
+D.canvas.addEventListener('pointerdown',ev=>{if(ev.button!==0&&ev.button!==1)return;if(ev.target.closest?.('.atom,.bond,.reactionArrow,.electronArrow,.textLabel,.polymerBracket'))return;const p=world(ev.clientX,ev.clientY);if(ev.button===1||S.space){S.interaction={type:'pan',screen:{x:ev.clientX,y:ev.clientY},view:{...S.view}};D.canvas.setPointerCapture(ev.pointerId);ev.preventDefault();return}
+if(S.mode==='structure'){
+  if(S.tool.kind==='atom'){const a=addAtom(S.tool.value,p.x,p.y);clearSelection();S.selection.atoms.add(a.id);pushHistory();renderAll();finishInsertion();return}
+  if(S.tool.kind==='customAtom'){const a=addAtom('C',p.x,p.y,{customLabel:String(S.tool.value)});clearSelection();S.selection.atoms.add(a.id);pushHistory();renderAll();finishInsertion();return}
+  if(S.tool.kind==='ring'){insertRing(p,S.tool.value);finishInsertion();return}
+  if(S.tool.kind==='fragment'){insertFragmentAt(p,S.tool.value);finishInsertion();return}
+  if(S.tool.kind==='polymer'){S.interaction={type:'polymerRect',start:p,current:p};D.marquee.setAttribute('visibility','visible');updateMarquee(p,p);D.canvas.setPointerCapture(ev.pointerId);return}
+}
 if(S.mode==='reaction'&&S.tool.kind==='reaction'){if(S.tool.value==='plus'){const l=addLabel(p.x,p.y,'+','plus');clearSelection();S.selection.labels.add(l.id)}else if(S.tool.value==='text'){const t=prompt('Текстовая подпись','Δ');if(t===null)return;const l=addLabel(p.x,p.y,t,'text');clearSelection();S.selection.labels.add(l.id)}else{const r=addReactionArrow(p.x,p.y,S.tool.value);clearSelection();S.selection.reaction.add(r.id)}pushHistory();renderAll();finishInsertion();return}
 if(ev.shiftKey||S.tool.kind==='select'){if(!ev.shiftKey)clearSelection();S.interaction={type:'marquee',start:p,current:p,add:ev.shiftKey};D.marquee.setAttribute('visibility','visible');updateMarquee(p,p);D.canvas.setPointerCapture(ev.pointerId);return}clearSelection();renderAll()});
-D.canvas.addEventListener('pointermove',ev=>{const it=S.interaction;if(!it)return;const p=world(ev.clientX,ev.clientY);if(it.type==='bondCreate'){if(dist(p,it.startPoint)>4)it.moved=true;const a=A(it.start),target=nearestAtom(p,18),q=target?target:pointFrom(a,bestBondAngle(a.id,p));D.preview.setAttribute('d',`M${a.x} ${a.y}L${q.x} ${q.y}`)}else if(it.type==='electronCreate'){it.current=p;const a=endpoint(it.start),target=targetFromScreen(ev.clientX,ev.clientY),b=endpoint({target,point:p}),mx=(a.x+b.x)/2,my=(a.y+b.y)/2-38;D.preview.setAttribute('d',`M${a.x} ${a.y}Q${mx} ${my} ${b.x} ${b.y}`)}else if(it.type==='dragAtoms'){const dx=p.x-it.start.x,dy=p.y-it.start.y;if(Math.abs(dx)+Math.abs(dy)>1)it.moved=true;for(const o of it.orig){const a=A(o.id);if(a){a.x=o.x+dx;a.y=o.y+dy}}renderAll()}else if(it.type==='dragReaction'){const r=R(it.id);r.x=it.x+(p.x-it.start.x);r.y=it.y+(p.y-it.start.y);it.moved=true;renderAll()}else if(it.type==='dragLabel'){const l=L(it.id);l.x=it.x+(p.x-it.start.x);l.y=it.y+(p.y-it.start.y);it.moved=true;renderAll()}else if(it.type==='marquee'){it.current=p;updateMarquee(it.start,p)}else if(it.type==='pan'){const rect=D.canvas.getBoundingClientRect(),sx=it.view.w/rect.width,sy=it.view.h/rect.height;S.view.x=it.view.x-(ev.clientX-it.screen.x)*sx;S.view.y=it.view.y-(ev.clientY-it.screen.y)*sy;updateView()}});
-D.canvas.addEventListener('pointerup',ev=>{const it=S.interaction;if(!it)return;const p=world(ev.clientX,ev.clientY);if(it.type==='bondCreate'){if(it.moved){const a=A(it.start);let target=nearestAtom(p,18);if(!target){const q=pointFrom(a,bestBondAngle(a.id,p));target=addAtom('C',q.x,q.y)}addBond(a.id,target.id,it.bondType);pushHistory();finishInsertion()}else{clearSelection();S.selection.atoms.add(it.start)}D.preview.setAttribute('visibility','hidden');renderAll()}else if(it.type==='electronCreate'){const target=targetFromScreen(ev.clientX,ev.clientY);addElectronArrow(it.start,{target,point:p},it.kind);pushHistory();D.preview.setAttribute('visibility','hidden');renderAll();finishInsertion()}else if(it.type==='dragAtoms'||it.type==='dragReaction'||it.type==='dragLabel'){if(it.moved)pushHistory()}else if(it.type==='marquee'){selectInRect(it.start,it.current,it.add);D.marquee.setAttribute('visibility','hidden');renderAll()}S.interaction=null});
+D.canvas.addEventListener('pointermove',ev=>{const it=S.interaction;if(!it)return;const p=world(ev.clientX,ev.clientY);if(it.type==='bondCreate'){if(dist(p,it.startPoint)>4)it.moved=true;const a=A(it.start),target=nearestAtom(p,18),q=target?target:pointFrom(a,bestBondAngle(a.id,p));D.preview.setAttribute('d',`M${a.x} ${a.y}L${q.x} ${q.y}`)}else if(it.type==='electronCreate'){it.current=p;const a=endpoint(it.start),target=targetFromScreen(ev.clientX,ev.clientY),b=endpoint({target,point:p}),mx=(a.x+b.x)/2,my=(a.y+b.y)/2-38;D.preview.setAttribute('d',`M${a.x} ${a.y}Q${mx} ${my} ${b.x} ${b.y}`)}else if(it.type==='dragAtoms'){const dx=p.x-it.start.x,dy=p.y-it.start.y;if(Math.abs(dx)+Math.abs(dy)>1)it.moved=true;for(const o of it.orig){const a=A(o.id);if(a){a.x=o.x+dx;a.y=o.y+dy}}renderAll()}else if(it.type==='dragReaction'){const r=R(it.id);r.x=it.x+(p.x-it.start.x);r.y=it.y+(p.y-it.start.y);it.moved=true;renderAll()}else if(it.type==='dragLabel'){const l=L(it.id);l.x=it.x+(p.x-it.start.x);l.y=it.y+(p.y-it.start.y);it.moved=true;renderAll()}else if(it.type==='marquee'){it.current=p;updateMarquee(it.start,p)}else if(it.type==='polymerRect'){it.current=p;updateMarquee(it.start,p)}else if(it.type==='pan'){const rect=D.canvas.getBoundingClientRect(),sx=it.view.w/rect.width,sy=it.view.h/rect.height;S.view.x=it.view.x-(ev.clientX-it.screen.x)*sx;S.view.y=it.view.y-(ev.clientY-it.screen.y)*sy;updateView()}});
+D.canvas.addEventListener('pointerup',ev=>{const it=S.interaction;if(!it)return;const p=world(ev.clientX,ev.clientY);if(it.type==='bondCreate'){if(it.moved){const a=A(it.start);let target=nearestAtom(p,18);if(!target){const q=pointFrom(a,bestBondAngle(a.id,p));target=addAtom('C',q.x,q.y)}addBond(a.id,target.id,it.bondType);pushHistory();finishInsertion()}else{clearSelection();S.selection.atoms.add(it.start)}D.preview.setAttribute('visibility','hidden');renderAll()}else if(it.type==='electronCreate'){const target=targetFromScreen(ev.clientX,ev.clientY);addElectronArrow(it.start,{target,point:p},it.kind);pushHistory();D.preview.setAttribute('visibility','hidden');renderAll();finishInsertion()}else if(it.type==='dragAtoms'||it.type==='dragReaction'||it.type==='dragLabel'){if(it.moved)pushHistory()}else if(it.type==='marquee'){selectInRect(it.start,it.current,it.add);D.marquee.setAttribute('visibility','hidden');renderAll()}
+else if(it.type==='polymerRect'){
+  const ids=S.atoms.filter(a=>inside(a,it.start,it.current)).map(a=>a.id);
+  if(ids.length){addPolymerBracket(ids);pushHistory();renderAll();finishInsertion()}else toast('Внутри скобок должен быть хотя бы один атом');
+  D.marquee.setAttribute('visibility','hidden');
+}
+S.interaction=null});
 function updateMarquee(a,b){D.marquee.setAttribute('x',Math.min(a.x,b.x));D.marquee.setAttribute('y',Math.min(a.y,b.y));D.marquee.setAttribute('width',Math.abs(a.x-b.x));D.marquee.setAttribute('height',Math.abs(a.y-b.y))}
 function inside(p,a,b){return p.x>=Math.min(a.x,b.x)&&p.x<=Math.max(a.x,b.x)&&p.y>=Math.min(a.y,b.y)&&p.y<=Math.max(a.y,b.y)}
-function selectInRect(a,b,add){if(!add)clearSelection();for(const x of S.atoms)if(inside(x,a,b))S.selection.atoms.add(x.id);for(const bo of S.bonds)if(S.selection.atoms.has(bo.a)&&S.selection.atoms.has(bo.b))S.selection.bonds.add(bo.id);for(const r of S.reactionArrows)if(inside(r,a,b))S.selection.reaction.add(r.id);for(const l of S.labels)if(inside(l,a,b))S.selection.labels.add(l.id);for(const e of S.electronArrows){const p=endpoint(e.start),q=endpoint(e.end),m={x:(p.x+q.x)/2,y:(p.y+q.y)/2};if(inside(m,a,b))S.selection.electron.add(e.id)}}
+function selectInRect(a,b,add){if(!add)clearSelection();for(const x of S.atoms)if(inside(x,a,b))S.selection.atoms.add(x.id);for(const bo of S.bonds)if(S.selection.atoms.has(bo.a)&&S.selection.atoms.has(bo.b))S.selection.bonds.add(bo.id);for(const r of S.reactionArrows)if(inside(r,a,b))S.selection.reaction.add(r.id);for(const l of S.labels)if(inside(l,a,b))S.selection.labels.add(l.id);for(const e of S.electronArrows){const p=endpoint(e.start),q=endpoint(e.end),m={x:(p.x+q.x)/2,y:(p.y+q.y)/2};if(inside(m,a,b))S.selection.electron.add(e.id)}
+for(const br of S.polymerBrackets){const bb=br.atomIds?.length?boundsForAtoms(br.atomIds,br.padding||22):br;if(bb&&inside({x:(bb.x1+bb.x2)/2,y:(bb.y1+bb.y2)/2},a,b))S.selection.polymer.add(br.id)}}
 D.canvas.addEventListener('wheel',ev=>{ev.preventDefault();const p=world(ev.clientX,ev.clientY),f=ev.deltaY>0?1.12:.89,nw=clamp(S.view.w*f,500,4200),nh=nw*(S.view.h/S.view.w),rx=(p.x-S.view.x)/S.view.w,ry=(p.y-S.view.y)/S.view.h;S.view.x=p.x-rx*nw;S.view.y=p.y-ry*nh;S.view.w=nw;S.view.h=nh;updateView()},{passive:false});
 function updateView(){D.canvas.setAttribute('viewBox',`${S.view.x} ${S.view.y} ${S.view.w} ${S.view.h}`)}
 function insertRing(center,kind){const n=kind==='benzene'?6:Number(kind),rr=BOND_LEN/(2*Math.sin(Math.PI/n)),ids=[],bids=[];for(let i=0;i<n;i++){const d=-90+i*360/n;ids.push(addAtom('C',center.x+Math.cos(rad(d))*rr,center.y+Math.sin(rad(d))*rr).id)}for(let i=0;i<n;i++){const b=addBond(ids[i],ids[(i+1)%n],kind==='benzene'?(i%2===0?'double':'single'):'single');bids.push(b.id)}addRing(ids,bids,kind);clearSelection();ids.forEach(id=>S.selection.atoms.add(id));pushHistory();renderAll();return ids}
 function attachRing(anchorId,kind){const n=kind==='benzene'?6:Number(kind),a=A(anchorId),rr=BOND_LEN/(2*Math.sin(Math.PI/n)),center=pointFrom(a,bestBondAngle(anchorId),rr),start=ang(center,a),ids=[a.id],bids=[];for(let i=1;i<n;i++){const d=start+i*360/n;ids.push(addAtom('C',center.x+Math.cos(rad(d))*rr,center.y+Math.sin(rad(d))*rr).id)}for(let i=0;i<n;i++){const b=addBond(ids[i],ids[(i+1)%n],kind==='benzene'?(i%2===0?'double':'single'):'single');bids.push(b.id)}addRing(ids,bids,kind);pushHistory();renderAll()}
-function attachFragment(anchorId,name,record=true){const a=A(anchorId),d=bestBondAngle(anchorId);const single=e=>{const p=pointFrom(a,d),n=addAtom(e,p.x,p.y);addBond(a.id,n.id);return n};if(name==='Me')single('C');else if(name==='Et'){const c=single('C'),p=pointFrom(c,d),c2=addAtom('C',p.x,p.y);addBond(c.id,c2.id)}else if(name==='OH')single('O');else if(name==='NH2'){const n=single('N');n.hMode='Show';n.hydrogens=2}else if(name==='Ph'){const p=pointFrom(a,d),c=addAtom('C',p.x,p.y);addBond(a.id,c.id);attachRing(c.id,'benzene');record=false}else if(name==='COOH'){const c=single('C'),p1=pointFrom(c,d),p2=pointFrom(c,d+90,BOND_LEN*.78),o1=addAtom('O',p1.x,p1.y,{hMode:'Show',hydrogens:1}),o2=addAtom('O',p2.x,p2.y);addBond(c.id,o1.id);addBond(c.id,o2.id,'double')}else if(name==='NO2'){const n=single('N'),p1=pointFrom(n,d),p2=pointFrom(n,d+90,BOND_LEN*.78),o1=addAtom('O',p1.x,p1.y),o2=addAtom('O',p2.x,p2.y);addBond(n.id,o1.id,'double');addBond(n.id,o2.id)}else if(name==='CF3'){const c=single('C');for(const dd of[-90,0,90]){const p=pointFrom(c,d+dd,BOND_LEN*.7),f=addAtom('F',p.x,p.y);addBond(c.id,f.id)}}else if(name==='Boc'){const o=single('O'),p=pointFrom(o,d),c=addAtom('C',p.x,p.y);addBond(o.id,c.id);const p1=pointFrom(c,d+90,BOND_LEN*.75),p2=pointFrom(c,d),o1=addAtom('O',p1.x,p1.y),o2=addAtom('O',p2.x,p2.y);addBond(c.id,o1.id,'double');addBond(c.id,o2.id)}if(record){pushHistory();renderAll()}}
-function insertFragmentAt(p,name){const a=addAtom('C',p.x,p.y);attachFragment(a.id,name)}
-function deleteSelection(){const atoms=new Set(S.selection.atoms),bonds=new Set(S.selection.bonds);S.atoms=S.atoms.filter(a=>!atoms.has(a.id));S.bonds=S.bonds.filter(b=>!bonds.has(b.id)&&!atoms.has(b.a)&&!atoms.has(b.b));S.rings=S.rings.filter(r=>!r.atomIds.some(id=>atoms.has(id)));S.reactionArrows=S.reactionArrows.filter(r=>!S.selection.reaction.has(r.id));S.electronArrows=S.electronArrows.filter(e=>!S.selection.electron.has(e.id));S.labels=S.labels.filter(l=>!S.selection.labels.has(l.id));clearSelection();pushHistory();renderAll()}
-function renderProps(){const one=selectedObject();D.props.replaceChildren();if(!one){D.propsTitle.textContent=selectionCount()>1?`Выделено: ${selectionCount()}`:'Свойства';if(selectionCount()>1){D.props.innerHTML=`<div class="infoBox"><b>${selectionCount()}</b> объектов выделено.</div><div class="emptyInfo">Перетаскивание выбранного атома перемещает всю выбранную группу атомов. Связи сохраняются автоматически.</div>`;return}D.props.innerHTML=`<div class="infoBox"><b>Документ</b><br>${S.atoms.length} атомов · ${S.bonds.length} связей · ${S.reactionArrows.length} стрелок</div><div class="propGrid" style="margin-bottom:12px"><label>Отображать C</label><select id="pShowCarbons"><option value="yes"${S.settings.showCarbons?' selected':''}>Да</option><option value="no"${!S.settings.showCarbons?' selected':''}>Нет</option></select></div><div class="emptyInfo"><b>Горячие клавиши</b><br><span class="kbd">C</span> <span class="kbd">N</span> <span class="kbd">O</span> <span class="kbd">S</span> <span class="kbd">P</span> <span class="kbd">F</span> — изменить атом<br><br><span class="kbd">Shift</span> + click — добавить к выделению<br><span class="kbd">Shift</span> + drag — рамка<br><span class="kbd">Delete</span> — удалить<br><span class="kbd">Ctrl/Cmd+Z</span> — Undo</div>`;const sc=document.getElementById('pShowCarbons');if(sc)sc.onchange=()=>{S.settings.showCarbons=sc.value==='yes';renderAll()};return}if(one.kind==='atom')atomProps(one.obj);else if(one.kind==='bond')bondProps(one.obj);else if(one.kind==='reaction')reactionProps(one.obj);else if(one.kind==='electron')electronProps(one.obj);else labelProps(one.obj)}
+function attachFragment(anchorId,name,record=true){const a=A(anchorId),d=bestBondAngle(anchorId);const single=e=>{const p=pointFrom(a,d),n=addAtom(e,p.x,p.y);addBond(a.id,n.id);return n};if(name==='Me')single('C');else if(name==='Et'){const c=single('C'),p=pointFrom(c,d),c2=addAtom('C',p.x,p.y);addBond(c.id,c2.id)}else if(name==='OH'){const o=single('O');o.hMode='Show';o.hydrogens=1}else if(name==='NH2'){const n=single('N');n.hMode='Show';n.hydrogens=2}else if(name==='Ph'){const p=pointFrom(a,d),c=addAtom('C',p.x,p.y);addBond(a.id,c.id);attachRing(c.id,'benzene');record=false}else if(name==='COOH'){const c=single('C'),p1=pointFrom(c,d),p2=pointFrom(c,d+90,BOND_LEN*.78),o1=addAtom('O',p1.x,p1.y,{hMode:'Show',hydrogens:1}),o2=addAtom('O',p2.x,p2.y);addBond(c.id,o1.id);addBond(c.id,o2.id,'double')}else if(name==='NO2'){const n=single('N'),p1=pointFrom(n,d),p2=pointFrom(n,d+90,BOND_LEN*.78),o1=addAtom('O',p1.x,p1.y),o2=addAtom('O',p2.x,p2.y);addBond(n.id,o1.id,'double');addBond(n.id,o2.id)}else if(name==='CF3'){const c=single('C');for(const dd of[-90,0,90]){const p=pointFrom(c,d+dd,BOND_LEN*.7),f=addAtom('F',p.x,p.y);addBond(c.id,f.id)}}else if(name==='Boc'){const o=single('O'),p=pointFrom(o,d),c=addAtom('C',p.x,p.y);addBond(o.id,c.id);const p1=pointFrom(c,d+90,BOND_LEN*.75),p2=pointFrom(c,d),o1=addAtom('O',p1.x,p1.y),o2=addAtom('O',p2.x,p2.y);addBond(c.id,o1.id,'double');addBond(c.id,o2.id)}if(record){pushHistory();renderAll()}}
+function insertFragmentAt(p,name){
+  if(name==='OH'){const o=addAtom('O',p.x,p.y,{hMode:'Show',hydrogens:1});clearSelection();S.selection.atoms.add(o.id);pushHistory();renderAll();return}
+  if(name==='NH2'){const n=addAtom('N',p.x,p.y,{hMode:'Show',hydrogens:2});clearSelection();S.selection.atoms.add(n.id);pushHistory();renderAll();return}
+  const a=addAtom('C',p.x,p.y);attachFragment(a.id,name)
+}
+function deleteSelection(){const atoms=new Set(S.selection.atoms),bonds=new Set(S.selection.bonds);S.atoms=S.atoms.filter(a=>!atoms.has(a.id));S.bonds=S.bonds.filter(b=>!bonds.has(b.id)&&!atoms.has(b.a)&&!atoms.has(b.b));S.rings=S.rings.filter(r=>!r.atomIds.some(id=>atoms.has(id)));S.reactionArrows=S.reactionArrows.filter(r=>!S.selection.reaction.has(r.id));S.electronArrows=S.electronArrows.filter(e=>!S.selection.electron.has(e.id));S.labels=S.labels.filter(l=>!S.selection.labels.has(l.id));S.polymerBrackets=S.polymerBrackets.filter(br=>!S.selection.polymer.has(br.id)&&!br.atomIds?.some(id=>atoms.has(id)));clearSelection();pushHistory();renderAll()}
+function renderProps(){const one=selectedObject();D.props.replaceChildren();if(!one){D.propsTitle.textContent=selectionCount()>1?`Выделено: ${selectionCount()}`:'Свойства';if(selectionCount()>1){D.props.innerHTML=`<div class="infoBox"><b>${selectionCount()}</b> объектов выделено.</div><div class="emptyInfo">Перетаскивание выбранного атома перемещает всю выбранную группу атомов. Связи сохраняются автоматически.</div>`;return}D.props.innerHTML=`<div class="infoBox"><b>Документ</b><br>${S.atoms.length} атомов · ${S.bonds.length} связей · ${S.reactionArrows.length} стрелок</div><div class="propGrid" style="margin-bottom:12px"><label>Отображать C</label><select id="pShowCarbons"><option value="yes"${S.settings.showCarbons?' selected':''}>Да</option><option value="no"${!S.settings.showCarbons?' selected':''}>Нет</option></select></div><div class="emptyInfo"><b>Горячие клавиши</b><br><span class="kbd">C</span> <span class="kbd">N</span> <span class="kbd">O</span> <span class="kbd">S</span> <span class="kbd">P</span> <span class="kbd">F</span> — изменить атом<br><br><span class="kbd">Shift</span> + click — добавить к выделению<br><span class="kbd">Shift</span> + drag — рамка<br><span class="kbd">Delete</span> — удалить<br><span class="kbd">Ctrl/Cmd+Z</span> — отменить</div>`;const sc=document.getElementById('pShowCarbons');if(sc)sc.onchange=()=>{S.settings.showCarbons=sc.value==='yes';renderAll()};return}if(one.kind==='atom')atomProps(one.obj);else if(one.kind==='bond')bondProps(one.obj);else if(one.kind==='reaction')reactionProps(one.obj);else if(one.kind==='electron')electronProps(one.obj);else if(one.kind==='polymer')polymerProps(one.obj);else labelProps(one.obj)}
 function bind(id,event,live,commit){const x=document.getElementById(id);if(!x)return;x.addEventListener(event,()=>{live(x);renderAll()});if(commit)x.addEventListener('change',()=>pushHistory())}
 function options(arr,v){return arr.map(x=>`<option value="${x}"${x===v?' selected':''}>${x}</option>`).join('')}
 function esc(s){return String(s??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
-function atomProps(a){D.propsTitle.textContent='Atom';D.props.innerHTML=`<div class="propGrid"><label>Element</label><select id="pElement">${options([...ELEMENTS,...MORE],a.element)}</select><label>Charge</label><input id="pCharge" type="number" min="-4" max="4" value="${a.charge}"><label>Isotope</label><input id="pIso" type="number" min="0" value="${a.isotope}"><label>Hydrogens</label><input id="pH" type="number" min="0" max="8" value="${a.hydrogens}"><label>H mode</label><select id="pHMode">${options(['Auto','Show','Hide'],a.hMode)}</select><label>Radical</label><select id="pRad">${options(['none','single','doublet','triplet'],a.radical)}</select><label>Lone pairs</label><input id="pLP" type="number" min="0" max="4" value="${a.lonePairs}"></div>`;bind('pElement','change',x=>a.element=x.value,true);bind('pCharge','input',x=>a.charge=Number(x.value)||0,true);bind('pIso','input',x=>a.isotope=x.value,true);bind('pH','input',x=>a.hydrogens=Number(x.value)||0,true);bind('pHMode','change',x=>a.hMode=x.value,true);bind('pRad','change',x=>a.radical=x.value,true);bind('pLP','input',x=>a.lonePairs=Number(x.value)||0,true)}
-function bondProps(b){D.propsTitle.textContent='Bond';D.props.innerHTML=`<div class="propGrid"><label>Type</label><select id="pBT">${options(['single','double','triple','aromatic','wedge','dash','wavy'],b.bondType)}</select><label>Stereo</label><select id="pStereo">${options(['none','up','down','either'],b.stereo)}</select><label>Order</label><input id="pOrder" type="number" step=".5" value="${b.order}"></div>`;bind('pBT','change',x=>{b.bondType=x.value;b.order=x.value==='double'?2:x.value==='triple'?3:x.value==='aromatic'?1.5:1},true);bind('pStereo','change',x=>b.stereo=x.value,true);bind('pOrder','input',x=>b.order=Number(x.value)||1,true)}
-function reactionProps(r){D.propsTitle.textContent='ReactionArrow';D.props.innerHTML=`<div class="propGrid"><label>Тип</label><select id="pRT">${options(['forward','reversible','equilibrium'],r.kind)}</select><label>Над стрелкой</label><input id="pTop" value="${esc(r.top)}"><label>Под стрелкой</label><input id="pBottom" value="${esc(r.bottom)}"><label>Длина</label><input id="pLen" type="number" min="70" max="300" value="${r.length}"></div>`;bind('pRT','change',x=>r.kind=x.value,true);bind('pTop','input',x=>r.top=x.value,true);bind('pBottom','input',x=>r.bottom=x.value,true);bind('pLen','input',x=>r.length=Number(x.value)||130,true)}
-function electronProps(e){D.propsTitle.textContent='ElectronArrow';D.props.innerHTML=`<div class="propGrid"><label>Тип</label><select id="pET">${options(['pair','single'],e.kind)}</select><label>Направление</label><select id="pDir">${options(['forward','reverse'],e.direction)}</select></div>`;bind('pET','change',x=>e.kind=x.value,true);bind('pDir','change',x=>e.direction=x.value,true)}
-function labelProps(l){D.propsTitle.textContent='TextLabel';D.props.innerHTML=`<div class="propGrid"><label>Текст</label><input id="pText" value="${esc(l.text)}"></div>`;bind('pText','input',x=>l.text=x.value,true)}
+function atomProps(a){
+  D.propsTitle.textContent='Атом';
+  const hModeOptions=[
+    ['Auto','Авто'],['Show','Показывать'],['Hide','Скрывать']
+  ].map(([v,t])=>`<option value="${v}"${a.hMode===v?' selected':''}>${t}</option>`).join('');
+  const radicalOptions=[
+    ['none','Нет'],['single','Один электрон'],['doublet','Дублет'],['triplet','Триплет']
+  ].map(([v,t])=>`<option value="${v}"${a.radical===v?' selected':''}>${t}</option>`).join('');
+  D.props.innerHTML=`<div class="propGrid">
+    <label>Элемент</label><select id="pElement">${options([...ELEMENTS,...MORE],a.element)}</select>
+    <label>Обозначение</label><input id="pCustom" value="${esc(a.customLabel||'')}" placeholder="NH2, SO3H, OMe…">
+    <label>Заряд</label><input id="pCharge" type="number" min="-4" max="4" value="${a.charge}">
+    <label>Изотоп</label><input id="pIso" type="number" min="0" value="${a.isotope}">
+    <label>Водороды</label><input id="pH" type="number" min="0" max="8" value="${a.hydrogens}">
+    <label>Отображение H</label><select id="pHMode">${hModeOptions}</select>
+    <label>Радикал</label><select id="pRad">${radicalOptions}</select>
+    <label>Неподелённые пары</label><input id="pLP" type="number" min="0" max="4" value="${a.lonePairs}">
+  </div>
+  <div class="emptyInfo" style="margin-top:10px">В поле «Обозначение» можно ввести NH2, OH, COOH, SO3H, OMe, R и другие химические обозначения. Цифры автоматически показываются нижним индексом.</div>`;
+  bind('pElement','change',x=>{a.element=x.value;a.customLabel=''},true);
+  bind('pCustom','input',x=>a.customLabel=x.value,true);
+  bind('pCharge','input',x=>a.charge=Number(x.value)||0,true);
+  bind('pIso','input',x=>a.isotope=x.value,true);
+  bind('pH','input',x=>a.hydrogens=Number(x.value)||0,true);
+  bind('pHMode','change',x=>a.hMode=x.value,true);
+  bind('pRad','change',x=>a.radical=x.value,true);
+  bind('pLP','input',x=>a.lonePairs=Number(x.value)||0,true)
+}
+function bondProps(b){
+  D.propsTitle.textContent='Связь';
+  const types=[
+    ['single','Одинарная'],['double','Двойная'],['triple','Тройная'],['aromatic','Ароматическая'],
+    ['wedge','Клин'],['dash','Штриховой клин'],['wavy','Волнистая']
+  ].map(([v,t])=>`<option value="${v}"${b.bondType===v?' selected':''}>${t}</option>`).join('');
+  const stereo=[
+    ['none','Нет'],['up','Вверх'],['down','Вниз'],['either','Неопределённая']
+  ].map(([v,t])=>`<option value="${v}"${b.stereo===v?' selected':''}>${t}</option>`).join('');
+  D.props.innerHTML=`<div class="propGrid">
+    <label>Тип</label><select id="pBT">${types}</select>
+    <label>Стерео</label><select id="pStereo">${stereo}</select>
+    <label>Порядок</label><input id="pOrder" type="number" step=".5" value="${b.order}">
+    <label>Метка связи</label>
+    <select id="pStereoLabel">
+      <option value="none"${!b.stereoLabel||b.stereoLabel==='none'?' selected':''}>Нет</option>
+      <option value="alpha"${b.stereoLabel==='alpha'?' selected':''}>α</option>
+      <option value="beta"${b.stereoLabel==='beta'?' selected':''}>β</option>
+    </select>
+    <div class="propSpan"><button class="topBtn" id="reverseBond" style="width:100%">Развернуть связь</button></div>
+  </div>
+  <div class="emptyInfo" style="margin-top:10px">α/β теперь является характеристикой самой связи. Для клина и штрихового клина «Развернуть связь» меняет направление.</div>`;
+  bind('pBT','change',x=>{b.bondType=x.value;b.order=x.value==='double'?2:x.value==='triple'?3:x.value==='aromatic'?1.5:1},true);
+  bind('pStereo','change',x=>b.stereo=x.value,true);
+  bind('pOrder','input',x=>b.order=Number(x.value)||1,true);
+  bind('pStereoLabel','change',x=>b.stereoLabel=x.value,true);
+  document.getElementById('reverseBond').onclick=()=>{const old=b.a;b.a=b.b;b.b=old;pushHistory();renderAll()}
+}
+function reactionProps(r){
+  D.propsTitle.textContent='Стрелка реакции';
+  const rt=[
+    ['forward','Обычная'],['reversible','Обратимая'],['equilibrium','Равновесная']
+  ].map(([v,t])=>`<option value="${v}"${r.kind===v?' selected':''}>${t}</option>`).join('');
+  D.props.innerHTML=`<div class="propGrid">
+    <label>Тип</label><select id="pRT">${rt}</select>
+    <label>Над стрелкой</label><input id="pTop" value="${esc(r.top)}">
+    <label>Под стрелкой</label><input id="pBottom" value="${esc(r.bottom)}">
+    <label>Длина</label><input id="pLen" type="number" min="70" max="300" value="${r.length}">
+  </div>`;
+  bind('pRT','change',x=>r.kind=x.value,true);
+  bind('pTop','input',x=>r.top=x.value,true);
+  bind('pBottom','input',x=>r.bottom=x.value,true);
+  bind('pLen','input',x=>r.length=Number(x.value)||130,true)
+}
+function electronProps(e){
+  D.propsTitle.textContent='Электронная стрелка';
+  const et=[
+    ['pair','Электронная пара'],['single','Один электрон']
+  ].map(([v,t])=>`<option value="${v}"${e.kind===v?' selected':''}>${t}</option>`).join('');
+  const dir=[
+    ['forward','Прямое'],['reverse','Обратное']
+  ].map(([v,t])=>`<option value="${v}"${e.direction===v?' selected':''}>${t}</option>`).join('');
+  D.props.innerHTML=`<div class="propGrid"><label>Тип</label><select id="pET">${et}</select><label>Направление</label><select id="pDir">${dir}</select></div>`;
+  bind('pET','change',x=>e.kind=x.value,true);bind('pDir','change',x=>e.direction=x.value,true)
+}
+function labelProps(l){D.propsTitle.textContent='Текстовая подпись';D.props.innerHTML=`<div class="propGrid"><label>Текст</label><input id="pText" value="${esc(l.text)}"></div>`;bind('pText','input',x=>l.text=x.value,true)}
+function polymerProps(br){
+  D.propsTitle.textContent='Полимерные скобки';
+  D.props.innerHTML=`<div class="propGrid">
+    <label>Индекс</label><input id="pPolyIndex" value="${esc(br.index||'n')}">
+    <label>Скобки</label><select id="pPolyDelim">${options(['[]','()'],br.delimiters||'[]')}</select>
+    <label>Отступ</label><input id="pPolyPad" type="number" min="8" max="80" value="${br.padding||22}">
+  </div><div class="emptyInfo" style="margin-top:10px">Скобки привязаны к ${br.atomIds?.length||0} атомам и автоматически изменяют размер при перемещении структуры.</div>`;
+  bind('pPolyIndex','input',x=>br.index=x.value,true);
+  bind('pPolyDelim','change',x=>br.delimiters=x.value,true);
+  bind('pPolyPad','input',x=>br.padding=Number(x.value)||22,true);
+}
 function adjacency(){const m=new Map(S.atoms.map(a=>[a.id,[]]));for(const b of S.bonds){m.get(b.a)?.push({to:b.b,b});m.get(b.b)?.push({to:b.a,b})}return m}
 function connectedComponents(){const ad=adjacency(),seen=new Set(),out=[];for(const a of S.atoms){if(seen.has(a.id))continue;const q=[a.id],ids=[];seen.add(a.id);while(q.length){const id=q.shift();ids.push(id);for(const z of ad.get(id)||[])if(!seen.has(z.to)){seen.add(z.to);q.push(z.to)}}out.push(ids)}return{ad,out}}
 function ringForComponent(ids){const set=new Set(ids);return S.rings.find(r=>r.kind==='benzene'&&r.atomIds.every(id=>set.has(id)))}
-function benzeneCode(ids){const r=ringForComponent(ids);if(!r)return null;const ringSet=new Set(r.atomIds);let external=null,anchor=null;for(const id of r.atomIds){const b=S.bonds.find(x=>(x.a===id&&!ringSet.has(x.b))||(x.b===id&&!ringSet.has(x.a)));if(b){anchor=id;external=A(b.a===id?b.b:b.a);break}}if(!external)return'\\chemfig{*6(=-=-=-)}';if(external.element==='N'){const os=S.bonds.filter(b=>(b.a===external.id||b.b===external.id)).map(b=>A(b.a===external.id?b.b:b.a)).filter(a=>a&&a.element==='O');if(os.length>=2)return'\\chemfig{*6(=-=-(-N(=O)-O)=-)}'}if(external.element==='O')return'\\chemfig{*6(=-=-(-OH)=-)}';return null}
-function atomTok(a){let t=a.element==='C'&&!atomNeedsLabel(a)?'':a.element;if(a.charge)t=(t||'C')+'^{'+(a.charge>0?'+':'-')+'}';return t}
+function benzeneCode(ids){const r=ringForComponent(ids);if(!r)return null;const ringSet=new Set(r.atomIds);let external=null,anchor=null;for(const id of r.atomIds){const b=S.bonds.find(x=>(x.a===id&&!ringSet.has(x.b))||(x.b===id&&!ringSet.has(x.a)));if(b){anchor=id;external=A(b.a===id?b.b:b.a);break}}if(!external)return'\\chemfig{*6(=-=-=-)}';if(external.element==='N'){const os=S.bonds.filter(b=>(b.a===external.id||b.b===external.id)).map(b=>A(b.a===external.id?b.b:b.a)).filter(a=>a&&a.element==='O');if(os.length>=2)return'\\chemfig{*6(=-=-(-N(=O)-O)=-)}'}if(external.element==='O'&&external.hMode==='Show'&&external.hydrogens>0)return'\\chemfig{*6(=-=-(-OH)=-)}';return null}
+function atomTok(a){
+  if(a.element==='C'&&!atomNeedsLabel(a))return'';
+  return atomLatexText(a);
+}
 function bondTok(b,a,c){const map={single:'-',double:'=',triple:'~',aromatic:':',wedge:'<',dash:'<:',wavy:'~'};return`${map[b.bondType]||'-'}[:${Math.round(-ang(a,c))}]`}
 function genericChemfig(ids,ad){const set=new Set(ids),va=new Set(),vb=new Set();let root=ids[0];for(const id of ids){if((ad.get(id)||[]).filter(z=>set.has(z.to)).length===1){root=id;break}}function walk(id,parent=null){const a=A(id);va.add(id);let out=atomTok(a),main=false;for(const z of(ad.get(id)||[]).filter(z=>set.has(z.to)&&z.to!==parent&&!vb.has(z.b.id))){if(vb.has(z.b.id))continue;vb.add(z.b.id);if(va.has(z.to))continue;const c=A(z.to),seg=bondTok(z.b,a,c)+walk(z.to,id);if(!main){out+=seg;main=true}else out+=`(${seg})`}return out}return`\\chemfig{${walk(root)}}`}
 function componentCenter(ids){return{x:ids.reduce((s,id)=>s+A(id).x,0)/ids.length,y:ids.reduce((s,id)=>s+A(id).y,0)/ids.length}}
-function latexForModel(){const{ad,out}=connectedComponents(),mols=out.map(ids=>{const c=componentCenter(ids);return{x:c.x,code:benzeneCode(ids)||genericChemfig(ids,ad)}}),items=[...mols.map(m=>({x:m.x,kind:'mol',code:m.code})),...S.labels.map(l=>({x:l.x,kind:'label',obj:l})),...S.reactionArrows.map(r=>({x:r.x,kind:'reaction',obj:r}))].sort((a,b)=>a.x-b.x);let body;if(S.reactionArrows.length){body='\\schemestart\n  '+items.map(it=>{if(it.kind==='mol')return it.code;if(it.kind==='label')return it.obj.kind==='plus'?'\\+':`\\chemname{}{${it.obj.text}}`;const r=it.obj,ar=r.kind==='equilibrium'?'<=>':r.kind==='reversible'?'<->':'->';return`\\arrow{${ar}[${r.top}][${r.bottom}]}`}).join(' ')+'\n\\schemestop'}else body=mols.map(m=>m.code).join('\n\\qquad\n')||'\\chemfig{}';if(S.electronArrows.length)body+=`\n% mechanism: ${S.electronArrows.length} curved electron arrow(s)`;return`% ATexted chemistry prototype\n\\usepackage{chemfig}\n\\usepackage[version=4]{mhchem}\n\n${body}`}
+function latexForModel(){const{ad,out}=connectedComponents(),mols=out.map(ids=>{const c=componentCenter(ids);return{x:c.x,code:benzeneCode(ids)||genericChemfig(ids,ad)}}),items=[...mols.map(m=>({x:m.x,kind:'mol',code:m.code})),...S.labels.map(l=>({x:l.x,kind:'label',obj:l})),...S.reactionArrows.map(r=>({x:r.x,kind:'reaction',obj:r}))].sort((a,b)=>a.x-b.x);let body;if(S.reactionArrows.length){body='\\schemestart\n  '+items.map(it=>{if(it.kind==='mol')return it.code;if(it.kind==='label')return it.obj.kind==='plus'?'\\+':`\\chemname{}{${it.obj.text}}`;const r=it.obj,ar=r.kind==='equilibrium'?'<=>':r.kind==='reversible'?'<->':'->';return`\\arrow{${ar}[${r.top}][${r.bottom}]}`}).join(' ')+'\n\\schemestop'}else body=mols.map(m=>m.code).join('\n\\qquad\n')||'\\chemfig{}';if(S.electronArrows.length)body+=`\n% механизм: ${S.electronArrows.length} электронных стрелок`;
+const stereoBonds=S.bonds.filter(b=>b.stereoLabel&&b.stereoLabel!=='none');
+if(stereoBonds.length)body+=`\n% метки связей: ${stereoBonds.map(b=>b.stereoLabel==='alpha'?'α':'β').join(', ')}`;
+if(S.polymerBrackets.length){
+  body+='\n% polymer brackets generated from selected repeating units';
+  for(const br of S.polymerBrackets){
+    body+=`\n% \\polymerdelim[delimiters={${br.delimiters||'[]'}}, indice=${br.index||'n'}]{op${br.id}}{cl${br.id}}`;
+  }
+}
+return`% ATexted chemistry prototype\n\\usepackage{chemfig}\n\\usepackage[version=4]{mhchem}\n\n${body}`}
 function updateLatex(){S.generatedLatex=latexForModel()}
 async function copyExportCode(){const code=S.generatedLatex||latexForModel();try{await navigator.clipboard.writeText(code)}catch{D.exportCode.focus();D.exportCode.select();document.execCommand('copy')}toast('LaTeX скопирован')}
+D.customAtomInput.addEventListener('input',()=>D.customAtomPreview.textContent=formatCustomAtomPreview(D.customAtomInput.value));
+D.customAtomInput.addEventListener('keydown',ev=>{if(ev.key==='Enter'){ev.preventDefault();confirmCustomAtom()}});
+document.getElementById('customAtomInsert').onclick=confirmCustomAtom;
+document.getElementById('customAtomCancel').onclick=()=>D.customAtomDialog.close();
+document.getElementById('customAtomClose').onclick=()=>D.customAtomDialog.close();
+D.customAtomDialog.addEventListener('click',ev=>{const r=D.customAtomDialog.getBoundingClientRect();if(ev.clientX<r.left||ev.clientX>r.right||ev.clientY<r.top||ev.clientY>r.bottom)D.customAtomDialog.close()});
+
 document.getElementById('exportCopy').onclick=copyExportCode;
 document.getElementById('exportClose').onclick=()=>D.exportDialog.close();
 D.exportDialog.addEventListener('click',ev=>{const r=D.exportDialog.getBoundingClientRect();if(ev.clientX<r.left||ev.clientX>r.right||ev.clientY<r.top||ev.clientY>r.bottom)D.exportDialog.close()});
 document.getElementById('multiInsertBtn').onclick=()=>{S.multiInsert=!S.multiInsert;const b=document.getElementById('multiInsertBtn');b.classList.toggle('active',S.multiInsert);b.textContent=S.multiInsert?'Мультивставка: вкл':'Мультивставка';toast(S.multiInsert?'Множественная вставка включена':'Множественная вставка выключена')};
-document.getElementById('clearBtn').onclick=()=>{if(!confirm('Очистить всю химическую схему?'))return;S.atoms=[];S.bonds=[];S.rings=[];S.reactionArrows=[];S.electronArrows=[];S.labels=[];clearSelection();pushHistory();renderAll()};
+document.getElementById('clearBtn').onclick=()=>{if(!confirm('Очистить всю химическую схему?'))return;S.atoms=[];S.bonds=[];S.rings=[];S.reactionArrows=[];S.electronArrows=[];S.labels=[];S.polymerBrackets=[];clearSelection();pushHistory();renderAll()};
 document.getElementById('insertBtn').onclick=()=>{updateLatex();D.exportCode.value=S.generatedLatex;D.exportDialog.showModal();setTimeout(()=>D.exportCode.focus(),20)};
 D.undo.onclick=()=>restoreHistory(S.historyIndex-1);D.redo.onclick=()=>restoreHistory(S.historyIndex+1);
 MORE.forEach(x=>{const b=document.createElement('button');b.className='elementChoice';b.textContent=x;b.onclick=()=>{D.periodic.close();setTool('atom',x,true)};D.periodicBody.appendChild(b)});document.getElementById('periodicClose').onclick=()=>D.periodic.close();
-window.addEventListener('keydown',ev=>{if(D.periodic.open||D.exportDialog.open)return;const tag=document.activeElement?.tagName;if(['INPUT','SELECT','TEXTAREA'].includes(tag))return;if((ev.ctrlKey||ev.metaKey)&&ev.key.toLowerCase()==='z'){restoreHistory(S.historyIndex+(ev.shiftKey?1:-1));ev.preventDefault();return}if((ev.key==='Delete'||ev.key==='Backspace')&&hasSelection()){deleteSelection();ev.preventDefault();return}const k=ev.key.toUpperCase();if(['C','N','O','S','P','F'].includes(k)&&S.selection.atoms.size){for(const id of S.selection.atoms){const a=A(id);if(a)a.element=k}pushHistory();renderAll();ev.preventDefault();return}if(ev.code==='Space'){S.space=true;ev.preventDefault()}if(ev.key==='Escape'){if(!T.root.hidden){closeTour();return}S.interaction=null;D.preview.setAttribute('visibility','hidden');D.marquee.setAttribute('visibility','hidden');clearSelection();renderAll()}});window.addEventListener('keyup',ev=>{if(ev.code==='Space')S.space=false});
+window.addEventListener('keydown',ev=>{if(D.periodic.open||D.exportDialog.open||D.customAtomDialog.open)return;const tag=document.activeElement?.tagName;if(['INPUT','SELECT','TEXTAREA'].includes(tag))return;if((ev.ctrlKey||ev.metaKey)&&ev.key.toLowerCase()==='z'){restoreHistory(S.historyIndex+(ev.shiftKey?1:-1));ev.preventDefault();return}if((ev.key==='Delete'||ev.key==='Backspace')&&hasSelection()){deleteSelection();ev.preventDefault();return}const k=ev.key.toUpperCase();if(['C','N','O','S','P','F'].includes(k)&&S.selection.atoms.size){for(const id of S.selection.atoms){const a=A(id);if(a){a.element=k;a.customLabel=''}}pushHistory();renderAll();ev.preventDefault();return}if(ev.code==='Space'){S.space=true;ev.preventDefault()}if(ev.key==='Escape'){if(!T.root.hidden){closeTour();return}S.interaction=null;D.preview.setAttribute('visibility','hidden');D.marquee.setAttribute('visibility','hidden');clearSelection();renderAll()}});window.addEventListener('keyup',ev=>{if(ev.code==='Space')S.space=false});
 function rawRing(center,kind){const n=kind==='benzene'?6:Number(kind),rr=BOND_LEN/(2*Math.sin(Math.PI/n)),ids=[],bids=[];for(let i=0;i<n;i++){const d=-90+i*360/n;ids.push(addAtom('C',center.x+Math.cos(rad(d))*rr,center.y+Math.sin(rad(d))*rr).id)}for(let i=0;i<n;i++){const b=addBond(ids[i],ids[(i+1)%n],kind==='benzene'?(i%2===0?'double':'single'):'single');bids.push(b.id)}addRing(ids,bids,kind);return ids}
 function rawNO2(anchorId){const a=A(anchorId),d=bestBondAngle(anchorId),np=pointFrom(a,d),n=addAtom('N',np.x,np.y),p1=pointFrom(n,d),p2=pointFrom(n,d+90,BOND_LEN*.78),o1=addAtom('O',p1.x,p1.y),o2=addAtom('O',p2.x,p2.y);addBond(a.id,n.id);addBond(n.id,o1.id,'double');addBond(n.id,o2.id)}
 function starter(){rawRing({x:350,y:400},'benzene');const prod=rawRing({x:980,y:400},'benzene'),anchor=prod.reduce((best,id)=>A(id).x>A(best).x?id:best,prod[0]);rawNO2(anchor);const r=addReactionArrow(670,400,'forward');r.top='HNO₃, H₂SO₄';r.bottom='50 °C';pushHistory();clearSelection();renderAll()}
@@ -210,9 +476,9 @@ function starter(){rawRing({x:350,y:400},'benzene');const prod=rawRing({x:980,y:
 const TOUR_STEPS=[
  {target:null,title:'Химический редактор',text:'Это специализированный инструмент для структур, реакций и механизмов. Все режимы работают с одной общей схемой. Коротко покажем основной рабочий процесс.'},
  {target:'.modeSwitch',title:'Три режима — один холст',text:'«Структура» строит молекулы, «Реакция» добавляет стрелки и условия, «Механизм» — перенос электронов. Переключение режима ничего не очищает.'},
- {target:'.left',title:'Инструменты химика',text:'Слева только предметные инструменты: атомы, химические связи, кольца и компактный список фрагментов. Обычная вставка одноразовая: после неё включается «Выбор».'},
+ {target:'.left',title:'Инструменты химика',text:'Слева только предметные инструменты: атомы, химические связи, кольца и компактный список фрагментов. Обычная вставка одноразовая: после неё включается «Выбор». Фрагменты OH/NH₂ вставляются с явными водородами; α/β и [ ]ₙ находятся в разделе «Обозначения».'},
  {target:'.canvasWrap',title:'Построение и выделение',text:'На холсте выбирайте и перемещайте атомы. Shift+click добавляет объект к выделению, Shift+drag выделяет область. Связи всегда остаются привязанными к атомам.'},
- {target:'.right',title:'Свойства объекта',text:'Правая панель меняется по типу сущности: Atom, Bond, ReactionArrow или ElectronArrow. Здесь задаются заряд, водороды, стерео и условия реакции.'},
+ {target:'.right',title:'Свойства объекта',text:'Правая панель меняется по типу сущности: атом, связь, стрелку реакции или электронную стрелку. Здесь задаются заряд, водороды, стерео и условия реакции.'},
  {target:'#multiInsertBtn',title:'Множественная вставка',text:'Для серии одинаковых вставок включите «Мультивставку». Например: выберите C и кликайте по холсту много раз — инструмент останется активным.'},
  {target:'#insertBtn',title:'Готовый LaTeX',text:'Когда схема готова, нажмите «Вставить в документ». Откроется окно с автоматически сформированным кодом и кнопкой копирования.'}
 ];
